@@ -1,0 +1,68 @@
+// colors
+$background-color: #FFFFFF;
+$primary-color: #15214a;
+$secondary-color: #76c8ff;
+$button-color: #0b46b4;
+
+$text-color-dark: #202020;
+$text-color-light: #f0f0f0;
+
+// fonts
+$font-primary: 'Arial', sans-serif;
+$font-secondary: 'Arial Black', 'Arial', sans-serif;
+$font-s: 0.75rem;
+$font-m: 1rem;
+$font-l: 1.5rem;
+$font-xl: 3rem;
+
+// spacing
+$spacing-s: 0.5rem;
+$spacing-m: 1rem;
+$spacing-l: 2rem;
+$spacing-xl: 3rem;
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: $background-color;
+    color: $text-color-dark;
+    font-family: $font-primary;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font-secondary;
+}
+
+a {
+    color: $text-color-dark;
+
+    &:hover {
+        color: $button-color;
+    }
+}
+
+
+button {
+    display: block;
+    background-color: $button-color;
+    color: $text-color-light;
+    border: 1px solid transparent; 
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: clamp($font-s, 2vw, $font-m);
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary-color;
+    }
+}
+
+.scene4 {
+    &__button {
+        text-decoration: none;
+    }
+}

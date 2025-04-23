@@ -1,0 +1,102 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #202020;
+  font-family: "Arial", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Arial Black", "Arial", sans-serif;
+}
+
+a {
+  color: #202020;
+}
+a:hover {
+  color: #0b46b4;
+}
+
+button {
+  display: block;
+  background-color: #0b46b4;
+  color: #f0f0f0;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: clamp(0.75rem, 2vw, 1rem);
+  cursor: pointer;
+}
+button:hover {
+  background-color: #15214a;
+}
+
+.scene4__button {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m {
+  margin: 1rem;
+}
+
+.m-l {
+  margin: 2rem;
+}
+
+.mt {
+  margin-top: 1rem;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+.ml {
+  margin-left: 1rem;
+}
+
+.mr {
+  margin-right: 1rem;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p {
+  padding: 1rem;
+}
+
+.p-l {
+  padding: 2rem;
+}
+
+.pt {
+  padding-top: 1rem;
+}
+
+.pb {
+  padding-bottom: 1rem;
+}
+
+.pl {
+  padding-left: 1rem;
+}
+
+.pr {
+  padding-right: 1rem;
+}/*# sourceMappingURL=styles.css.map */

@@ -12,6 +12,7 @@ This project is a scrollytelling that focuses on Sustainable Development Goal 14
 ## Brainstorming 
 - Points discussed during the braimstorming session.
 
+
 ## Storyboard
 <img src="assets/images/storyboard.png" alt="Storyboard" width="300"/>
 
@@ -24,3 +25,38 @@ The story is split into several parts. First, we start above the water, where ev
 Instructions for getting started 
 
 Link to Github pages: 
+
+## Text Content
+Content retrieved from: https://sdgs.un.org/goals/goal14#progress_and_info 
+
+### Scene 1: Above the surface 
+Did you know that oceans cover more than 70% of our planet? They're like the Earth's life support system, providing food and homes for billions of people and animals. 
+
+
+### Scene 2: The ocean’s beauty
+Beneath the waves is an underwater paradise — coral reefs, sparkling fish, and all kinds of creatures. The ocean regulates our climate, provides food, and is home to amazing ecosystems.
+
+Let's dive in and see what’s going on beneath the surface
+
+### Scene 3: The threats and ocean’s decline
+But things are changing and the oceans are in trouble. 
+
+The ocean isn't the beautiful place it once was. Pollution is everywhere: plastic waste, oil spills, abandoned fishing nets. 
+
+Every year, millions of tons of plastic end up in the ocean, harming fish, coral reefs, and even the air we breathe.
+
+
+### Scene 4: Call to action
+If we don't change something, we could lose it.
+It’s time to act. Together, we can make a real difference and protect the ocean for future generations.
+
+So, what can you do? 
+
+We can all make a difference! Use less plastic, support eco-friendly brands, and get involved in beach cleanups. Every small action counts!
+
+Ocean acidification (Target 14.3) is getting worse, and illegal fishing (Target 14.6) is threatening marine ecosystems. By taking action, we can help protect our oceans for future generations
+
+The ocean needs us more than ever, and together, we can make a real impact. Let’s step up and show some love for the sea! 
+
+Button: Join to save the ocean
+Link: read more?

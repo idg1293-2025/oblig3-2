@@ -6,11 +6,16 @@
 ## Project Overview and Purpose
 This project includes an interactive website that uses scroll telling and storytelling. The goal is to raise awareness about one of the UN’s Sustainable Development Goals (SDGs) through visuals, animations, and interactive elements. We wanted to inform, inspire, and get people thinking, while also exploring tools like SVG and CSS drawings, JavaScript animations, and SASS and BEM.
 
+This project is a scrollytelling that focuses on Sustainable Development Goal 14: Life Below Water. The idea is to tell a visual story that shows how life in the ocean is being affected by pollution and climate change.
+
+
 ## Brainstorming 
 - Points discussed during the braimstorming session.
 
 ## Storyboard
-- Documentation about the Storyboard created before implementing the website.
+<img src="assets/images/storyboard.png" alt="Storyboard" width="300"/>
+
+The story is split into several parts. First, we start above the water, where everything looks calm and beautiful. Then, as the user scrolls down, they dive deeper into the ocean. The water gets darker and we see more and more trash and damage to marine life. In the last part, the story shifts to what we can do to fix things and protect the ocean. The goal is to make people more aware of the problem and encourage them to take action.
 
 ## Technology Stack
 - Technology stack employed and list of animations, interactions and observers implemented.

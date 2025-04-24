@@ -1,0 +1,23 @@
+@use '../base/global' as *;
+
+.scene4 {
+
+    &__button {
+        text-decoration: none;
+    }
+}
+
+button {
+    display: block;
+    background-color: $button-color;
+    color: $text-color-light;
+    border: 1px solid transparent; 
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: clamp($font-s, 2vw, $font-m);
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary-color;
+    }
+}

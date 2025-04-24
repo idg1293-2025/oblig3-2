@@ -1,0 +1,53 @@
+@use '../base/global' as *;
+
+// SCENE 1 - Above the surface
+.scene1 {
+    &__svg {
+        position: absolute; // all svg elements are absolute
+        
+        &--sun {
+            width: 12%;
+            top: 2%;
+            left: 2%;
+        }
+        &--cloud {
+            width: 10%;
+            top: 5%;
+            right: 15%;
+        }
+        &--flower {
+            width: 5%;
+            top: 42%;
+            right: 15%;
+        }
+        &--bird {
+            width: 5%;
+            top: 10%;
+            left: 50%;; 
+        }
+        &--turtle {
+            width: 5%;
+            top: 80%;
+            left: 20%;
+        }
+        &--fish1 {
+            width: 5%;
+            top: 70%;
+            right: 20%;
+        }
+        &--fish2 {
+            width: 5%;
+            top: 80%;
+            left: 50%;
+        }
+    }
+}
+
+// SCENE 2 - The ocean's beauty
+
+// SCENE 3 - The threats
+
+// SCENE 4 - Call to action
+
+
+

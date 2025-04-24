@@ -26,8 +26,9 @@ Instructions for getting started
 
 Link to Github pages: 
 
-## Text Content
-Content retrieved from: https://sdgs.un.org/goals/goal14#progress_and_info 
+## Content
+Text content retrieved from: https://sdgs.un.org/goals/goal14#progress_and_info 
+SVGs retrieved from: https://www.svgrepo.com/ 
 
 ### Scene 1: Above the surface 
 Did you know that oceans cover more than 70% of our planet? They're like the Earth's life support system, providing food and homes for billions of people and animals. 

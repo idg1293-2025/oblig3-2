@@ -1,15 +1,16 @@
 // colors
 $background-color: #FFFFFF;
-$primary-color: #15214a;
-$secondary-color: #76c8ff;
+$primary-color: #263b80;
+$secondary-color: #96d5ff;
+$tertiary-color: #d7efff;
 $button-color: #0b46b4;
 
-$text-color-dark: #202020;
+$text-color-dark: #393939;
 $text-color-light: #f0f0f0;
 
 // fonts
-$font-primary: 'Arial', sans-serif;
-$font-secondary: 'Arial Black', 'Arial', sans-serif;
+$font-text: 'Quicksand', sans-serif;
+$font-title: 'Bebas Neue', 'Arial Black', sans-serif;
 $font-s: 0.75rem;
 $font-m: 1rem;
 $font-l: 1.5rem;
@@ -28,13 +29,15 @@ html {
 body {
     background-color: $background-color;
     color: $text-color-dark;
-    font-family: $font-primary;
+    font-family: $font-text;
+    font-weight: 400;
 }
 
 h1,
 h2,
 h3 {
-    font-family: $font-secondary;
+    font-family: $font-title;
+    color: $text-color-dark;
 }
 
 a {
@@ -45,24 +48,3 @@ a {
     }
 }
 
-
-button {
-    display: block;
-    background-color: $button-color;
-    color: $text-color-light;
-    border: 1px solid transparent; 
-    border-radius: 1rem;
-    padding: 1rem;
-    font-size: clamp($font-s, 2vw, $font-m);
-    cursor: pointer;
-
-    &:hover {
-        background-color: $primary-color;
-    }
-}
-
-.scene4 {
-    &__button {
-        text-decoration: none;
-    }
-}

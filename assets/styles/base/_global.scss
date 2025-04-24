@@ -14,7 +14,7 @@ $font-title: 'Bebas Neue', 'Arial Black', sans-serif;
 $font-s: 0.75rem;
 $font-m: 1rem;
 $font-l: 1.5rem;
-$font-xl: 3rem;
+$font-xl: 4rem;
 
 // spacing
 $spacing-s: 0.5rem;
@@ -28,7 +28,6 @@ html {
 }
 
 body {
-    background-color: $dark-color;
     color: $text-color-dark;
     font-family: $font-text;
     font-weight: 400;

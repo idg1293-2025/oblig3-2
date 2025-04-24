@@ -1,0 +1,16 @@
+@use '../base/global' as *;
+
+.introduction {
+    position: relative;
+    background: linear-gradient(to left, $secondary-color, $tertiary-color);
+    height: 100vh;
+    z-index: 1;
+
+    &__title {
+        font-size: $font-xl;
+        position: absolute;
+        top: 30%;
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+}

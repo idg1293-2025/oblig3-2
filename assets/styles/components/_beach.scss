@@ -1,45 +1,28 @@
 @use '../base/global' as *;
 
-.scene1 {
+.beach {
     position: relative;
     background: linear-gradient(to left, $secondary-color, $tertiary-color);
     height: 100vh;
     z-index: 1;
 
-    &__title {
-        font-size: $font-xl;
-        position: absolute;
-        left: 2%;
-        top: 30%;
-        animation: title 1s ease-out forwards;
-        opacity: 0;
-    }
-
     &__text {
-        max-width: 30%;
-        font-size: $font-m;
+        max-width: 60%;
+        font-size: $font-l;
         position: absolute;
         font-weight: bold;
 
         &--first {
-            left: 2%;
-            top: 45%;
+            left: 5%;
+            top: 20%;
+            color: $text-color-dark;
             animation: text 1.5s ease-out forwards;
             opacity: 0;
-            animation-delay: 2s;
         }
         &--second {
-            left: 35%;
-            top: 68%;
-            color: $text-color-light;
-            animation: text 1.5s ease-out forwards;
-            opacity: 0;
-            animation-delay: 2s;
-        }
-        &--third {
             position: absolute;
-            bottom: 5%;
-            right: 0;
+            bottom: 25%;
+            left: 40%;
             color: $text-color-light;
             animation: bounce 2s infinite;
         }
@@ -64,11 +47,8 @@
         z-index: 0;
     }
 
-    &__svg--sun,
-    &__svg--cloud,
     &__svg--beach,
     &__svg--umbrella,
-    &__svg--bird,
     &__svg--fish1,
     &__svg--fish2,
     &__svg--turtle,
@@ -77,6 +57,53 @@
     &__title,
     &__text {
         z-index: 1; // all elements on top of ocean and surface
+    }
+
+    &__svg {
+        position: absolute; // all svg elements are absolute
+        
+        &--beach {
+            width: 12vh;
+            top: 43%;
+            right: 15%;
+        }
+        &--umbrella {
+            width: 15vh;
+            top: 42%;
+            left: 15%;
+        }
+        &--turtle {
+            width: 10vh;
+            top: 80%;
+            left: 20%;
+        }
+        &--fish1 {
+            width: 8vh;
+            top: 70%;
+            right: 15%;
+        }
+        &--fish2 {
+            width: 8vh;
+            top: 70%;
+            left: 10%;
+        }
+        &--wave {
+            width: 40vh;
+            bottom: 0;
+            left: 40%;
+            opacity: 0.3;
+            animation: wave 5s ease-in-out infinite;
+        }
+        &--crab {
+            width: 5vh;
+            top: 52%;
+            left: 50%;
+        }
+        &--turtle,
+        &--fish1,
+        &--fish2 {
+            animation: swim 3s ease-in-out infinite;
+        }
     }
 }
 
@@ -92,4 +119,14 @@
 @keyframes bounce {
     0%, 100% { transform: translate(-10%, 0); }
     50% { transform: translate(-10%, 5px); }
-  }
+}
+
+// Animations for sea creatures and ocean
+@keyframes swim {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(15px); }
+}
+@keyframes wave {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}

@@ -2,27 +2,11 @@
 
 // SCENE 1 - ABOVE THE SURFACE
 // SVG positions for scene 1
-.scene1 {
+/*
+.beach {
     &__svg {
         position: absolute; // all svg elements are absolute
         
-        &--sun {
-            width: 12%;
-            top: 2%;
-            left: 2%;
-            animation: sun 5s infinite ease-in-out;
-        }
-        &--cloud {
-            width: 10%;
-            top: 5%;
-            right: 15%;
-            animation: cloud 3s linear infinite;
-        }
-        &--bird {
-            width: 5%;
-            top: 10%;
-            left: 50%;
-        }
         &--beach {
             width: 7%;
             top: 43%;
@@ -67,6 +51,32 @@
         }
     }
 }
+
+// SKY SCENE
+.sky {
+    &__svg {
+        position: absolute; // all svg elements are absolute
+        
+        &--sun {
+            width: 12%;
+            top: 2%;
+            left: 2%;
+            animation: sun 5s infinite ease-in-out;
+        }
+        &--cloud {
+            width: 10%;
+            top: 5%;
+            right: 15%;
+            animation: cloud 3s linear infinite;
+        }
+        &--bird {
+            width: 5%;
+            top: 10%;
+            left: 50%;
+        }
+    }
+}
+
 // Animations for scene 1
 @keyframes sun {
     0%, 100% { transform: scale(1); }
@@ -85,10 +95,10 @@
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(10px); }
 }
-
+*/
 
 // SCENE 2 - THE OCEAN'S BEAUTY
-
+/*
 // SVG positions for scene 2
 .scene2 {
     &__svg {
@@ -137,13 +147,14 @@
         }
     }
 }
-
+*/
 // Animations for scene 2
 
 
 // SCENE 3 - THE THREATS
 
 // SVG positions for scene 3
+/*
 .scene3 {
     &__svg {
         position: absolute; // all svg elements are absolute
@@ -189,7 +200,7 @@
             left: 3%;
         }
     }
-}
+}*/
 // Animations for scene 3
 
 

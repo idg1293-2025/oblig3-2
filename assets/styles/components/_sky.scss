@@ -1,0 +1,53 @@
+@use '../base/global' as *;
+
+.sky {
+  position: relative;
+  background: linear-gradient(to left, $secondary-color, $tertiary-color);
+  height: 100vh;
+  z-index: 1;
+
+  &__text {
+    max-width: 30%;
+    font-size: $font-l;
+    position: absolute;
+    font-weight: bold;
+    left: 20%;
+    top: 50%;
+    animation: text 1.5s ease-out forwards;
+    opacity: 0;
+  }
+
+  &__svg {
+    position: absolute;
+
+    &--sun {
+      width: 20vh;
+      top: 2%;
+      left: 5%;
+      animation: sun 5s infinite ease-in-out;
+    }
+
+    &--cloud {
+      width: 20vh;
+      top: 5%;
+      right: 15%;
+      animation: cloud 3s linear infinite;
+    }
+
+    &--bird {
+      width: 15vh;
+      top: 10%;
+      left: 50%;
+    }
+  }
+}
+
+@keyframes sun {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+@keyframes cloud {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}

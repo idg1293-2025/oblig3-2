@@ -1,0 +1,50 @@
+@use '../base/global' as *;
+
+.scroll {
+    position: relative;
+    background: linear-gradient(to top, $button-color, $primary-color);
+    height: 100vh;
+    color: $text-color-light;
+
+    &__text {
+        max-width: 50%;
+        font-size: $font-l;
+        position: absolute;
+        top: 40%;
+        left: 50%; 
+        transform: translateX(-50%);
+        z-index: 2;
+
+        & span {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+
+    &__svg {
+        position: absolute; // all svg elements are absolute
+     
+        &--arrow {
+            width: 10vh;
+            bottom: 20%;
+            left: 50%; 
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+    }
+
+    /*
+    // Intersection observer 
+    &__text, 
+    &__svg {
+        //only visible when in viewport
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1s ease, transform 1s ease;
+    }
+    &.visible .scene2__text, 
+    &.visible .scene2__svg {
+        opacity: 1;
+        transform: translateY(0);
+    }*/
+}

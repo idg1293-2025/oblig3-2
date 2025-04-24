@@ -1,31 +1,22 @@
 @use '../base/global' as *;
 
-.scene3 {
+.changing {
     height: 100vh;
     position: relative;
-    background: linear-gradient(to bottom, $button-color, $dark-color, $dark-color, black);
+    background: linear-gradient(to bottom, $button-color, $dark-color, $dark-color);
     color: $text-color-light;
 
     &__text {
         max-width: 50%;
-        font-size: $font-l;
+        font-size: $font-xl;
         position: absolute;
         font-weight: bold;
-
-        &--first {
-            top: 15%;
-            right: 8%;
-        }
-        &--second {
-            top: 40%;
-            left: 10%;
-        }
-        &--third {
-            top: 60%;
-            left: 30%;
-        }
+        top: 15%;
+        right: 8%;
     }
 
+
+    /*
     // Intersection observer 
     &__text, 
     &__svg {
@@ -38,5 +29,5 @@
     &.visible .scene3__svg {
         opacity: 1;
         transform: translateY(0);
-    }
+    }*/
 }

@@ -4,7 +4,6 @@ html {
 }
 
 body {
-  background-color: rgb(7, 43, 67);
   color: #393939;
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
@@ -38,191 +37,197 @@ a:hover {
   box-sizing: border-box;
 }
 
-.scene1__svg {
-  position: absolute;
-}
-.scene1__svg--sun {
-  width: 12%;
-  top: 2%;
-  left: 2%;
-  animation: sun 5s infinite ease-in-out;
-}
-.scene1__svg--cloud {
-  width: 10%;
-  top: 5%;
-  right: 15%;
-  animation: cloud 3s linear infinite;
-}
-.scene1__svg--bird {
-  width: 5%;
-  top: 10%;
-  left: 50%;
-}
-.scene1__svg--beach {
-  width: 7%;
-  top: 43%;
-  right: 8%;
-}
-.scene1__svg--umbrella {
-  width: 7%;
-  top: 42%;
-  right: 25%;
-}
-.scene1__svg--turtle {
-  width: 5%;
-  top: 80%;
-  left: 20%;
-}
-.scene1__svg--fish1 {
-  width: 5%;
-  top: 70%;
-  right: 20%;
-}
-.scene1__svg--fish2 {
-  width: 5%;
-  top: 70%;
-  left: 10%;
-}
-.scene1__svg--wave {
-  width: 25%;
-  bottom: 0;
-  left: 40%;
-  opacity: 0.3;
-  animation: wave 5s ease-in-out infinite;
-}
-.scene1__svg--crab {
-  width: 3%;
-  top: 52%;
-  left: 40%;
-}
-.scene1__svg--turtle, .scene1__svg--fish1, .scene1__svg--fish2 {
-  animation: swim 3s ease-in-out infinite;
+/*
+.beach {
+    &__svg {
+        position: absolute; // all svg elements are absolute
+
+        &--beach {
+            width: 7%;
+            top: 43%;
+            right: 8%;
+        }
+        &--umbrella {
+            width: 7%;
+            top: 42%;
+            right: 25%;
+        }
+        &--turtle {
+            width: 5%;
+            top: 80%;
+            left: 20%;
+        }
+        &--fish1 {
+            width: 5%;
+            top: 70%;
+            right: 20%;
+        }
+        &--fish2 {
+            width: 5%;
+            top: 70%;
+            left: 10%;
+        }
+        &--wave {
+            width: 25%;
+            bottom: 0;
+            left: 40%;
+            opacity: 0.3;
+            animation: wave 5s ease-in-out infinite;
+        }
+        &--crab {
+            width: 3%;
+            top: 52%;
+            left: 40%;
+        }
+        &--turtle,
+        &--fish1,
+        &--fish2 {
+            animation: swim 3s ease-in-out infinite;
+        }
+    }
 }
 
+// SKY SCENE
+.sky {
+    &__svg {
+        position: absolute; // all svg elements are absolute
+
+        &--sun {
+            width: 12%;
+            top: 2%;
+            left: 2%;
+            animation: sun 5s infinite ease-in-out;
+        }
+        &--cloud {
+            width: 10%;
+            top: 5%;
+            right: 15%;
+            animation: cloud 3s linear infinite;
+        }
+        &--bird {
+            width: 5%;
+            top: 10%;
+            left: 50%;
+        }
+    }
+}
+
+// Animations for scene 1
 @keyframes sun {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
 }
 @keyframes cloud {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(10px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
 }
 @keyframes swim {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(15px);
-  }
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(15px); }
 }
 @keyframes wave {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
 }
-.scene2__svg {
-  position: absolute;
-}
-.scene2__svg--seaweed1 {
-  width: 15%;
-  bottom: 0;
-  left: 0;
-}
-.scene2__svg--seaweed2 {
-  width: 15%;
-  bottom: 0;
-  right: 2%;
-}
-.scene2__svg--dolphin {
-  width: 15%;
-  top: 20%;
-  right: 20%;
-}
-.scene2__svg--jellyfish {
-  width: 10%;
-  top: 10%;
-  right: 10%;
-}
-.scene2__svg--seabottom {
-  width: 15%;
-  bottom: 0;
-  left: 15%;
-}
-.scene2__svg--fishes {
-  width: 15%;
-  top: 40%;
-  left: 25%;
-}
-.scene2__svg--green-fish {
-  width: 8%;
-  top: 50%;
-  left: 8%;
-}
-.scene2__svg--arrow {
-  width: 5%;
-  bottom: 2%;
-  left: 50%;
-  cursor: pointer;
-}
+*/
+/*
+// SVG positions for scene 2
+.scene2 {
+    &__svg {
+        position: absolute; // all svg elements are absolute
 
-.scene3__svg {
-  position: absolute;
+        &--seaweed1 {
+            width: 15%;
+            bottom: 0;
+            left: 0;
+        }
+        &--seaweed2 {
+            width: 15%;
+            bottom: 0;
+            right: 2%;
+        }
+        &--dolphin {
+            width: 15%;
+            top: 20%;
+            right: 20%;
+        }
+        &--jellyfish {
+            width: 10%;
+            top: 10%;
+            right: 10%;
+        }
+        &--seabottom {
+            width: 15%;
+            bottom: 0;
+            left: 15%;
+        }
+        &--fishes {
+            width: 15%;
+            top: 40%;
+            left: 25%;
+        }
+        &--green-fish {
+            width: 8%;
+            top: 50%;
+            left: 8%;
+        }
+        &--arrow {
+            width: 5%;
+            bottom: 2%;
+            left: 50%;
+            cursor: pointer;
+        }
+    }
 }
-.scene3__svg--anchor {
-  width: 10%;
-  bottom: 2%;
-  right: 5%;
-}
-.scene3__svg--bottle {
-  width: 8%;
-  top: 60%;
-  left: 10%;
-}
-.scene3__svg--dirt {
-  width: 6%;
-  top: 10%;
-  left: 10%;
-}
-.scene3__svg--fishbone {
-  width: 8%;
-  top: 30%;
-  right: 10%;
-}
-.scene3__svg--garbage {
-  width: 8%;
-  top: 50%;
-  right: 2%;
-}
-.scene3__svg--plastic {
-  width: 8%;
-  top: 10%;
-  left: 25%;
-}
-.scene3__svg--oil {
-  width: 13%;
-  bottom: 8%;
-  left: 25%;
-}
-.scene3__svg--bandage {
-  width: 8%;
-  bottom: 5%;
-  left: 3%;
-}
+*/
+/*
+.scene3 {
+    &__svg {
+        position: absolute; // all svg elements are absolute
 
+        &--anchor {
+            width: 10%;
+            bottom: 2%;
+            right: 5%;
+        }
+        &--bottle {
+            width: 8%;
+            top: 60%;
+            left: 10%;
+        }
+        &--dirt {
+            width: 6%;
+            top: 10%;
+            left: 10%;
+        }
+        &--fishbone {
+            width: 8%;
+            top: 30%;
+            right: 10%;
+        }
+        &--garbage {
+            width: 8%;
+            top: 50%;
+            right: 2%;
+        }
+        &--plastic {
+            width: 8%;
+            top: 10%;
+            left: 25%;
+        }
+        &--oil {
+            width: 13%;
+            bottom: 8%;
+            left: 25%;
+        }
+        &--bandage {
+            width: 8%;
+            bottom: 5%;
+            left: 3%;
+        }
+    }
+}*/
 .scene4__svg {
   position: absolute;
 }
@@ -257,49 +262,103 @@ a:hover {
   right: 5%;
 }
 
-.scene1 {
+.introduction {
   position: relative;
   background: linear-gradient(to left, #96d5ff, #d7efff);
   height: 100vh;
   z-index: 1;
 }
-.scene1__title {
-  font-size: 3rem;
+.introduction__title {
+  font-size: 4rem;
   position: absolute;
-  left: 2%;
   top: 30%;
-  animation: title 1s ease-out forwards;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sky {
+  position: relative;
+  background: linear-gradient(to left, #96d5ff, #d7efff);
+  height: 100vh;
+  z-index: 1;
+}
+.sky__text {
+  max-width: 30%;
+  font-size: 1.5rem;
+  position: absolute;
+  font-weight: bold;
+  left: 20%;
+  top: 50%;
+  animation: text 1.5s ease-out forwards;
   opacity: 0;
 }
-.scene1__text {
-  max-width: 30%;
-  font-size: 1rem;
+.sky__svg {
+  position: absolute;
+}
+.sky__svg--sun {
+  width: 20vh;
+  top: 2%;
+  left: 5%;
+  animation: sun 5s infinite ease-in-out;
+}
+.sky__svg--cloud {
+  width: 20vh;
+  top: 5%;
+  right: 15%;
+  animation: cloud 3s linear infinite;
+}
+.sky__svg--bird {
+  width: 15vh;
+  top: 10%;
+  left: 50%;
+}
+
+@keyframes sun {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+@keyframes cloud {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.beach {
+  position: relative;
+  background: linear-gradient(to left, #96d5ff, #d7efff);
+  height: 100vh;
+  z-index: 1;
+}
+.beach__text {
+  max-width: 60%;
+  font-size: 1.5rem;
   position: absolute;
   font-weight: bold;
 }
-.scene1__text--first {
-  left: 2%;
-  top: 45%;
+.beach__text--first {
+  left: 5%;
+  top: 20%;
+  color: #393939;
   animation: text 1.5s ease-out forwards;
   opacity: 0;
-  animation-delay: 2s;
 }
-.scene1__text--second {
-  left: 35%;
-  top: 68%;
-  color: #f0f0f0;
-  animation: text 1.5s ease-out forwards;
-  opacity: 0;
-  animation-delay: 2s;
-}
-.scene1__text--third {
+.beach__text--second {
   position: absolute;
-  bottom: 5%;
-  right: 0;
+  bottom: 25%;
+  left: 40%;
   color: #f0f0f0;
   animation: bounce 2s infinite;
 }
-.scene1__surface {
+.beach__surface {
   position: absolute;
   bottom: 40%;
   width: 100%;
@@ -307,7 +366,7 @@ a:hover {
   background-image: linear-gradient(to bottom, #ffeed7, #ddb888);
   z-index: 0;
 }
-.scene1__ocean {
+.beach__ocean {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -315,8 +374,51 @@ a:hover {
   background: linear-gradient(to bottom, #96d5ff, #263b80);
   z-index: 0;
 }
-.scene1__svg--sun, .scene1__svg--cloud, .scene1__svg--beach, .scene1__svg--umbrella, .scene1__svg--bird, .scene1__svg--fish1, .scene1__svg--fish2, .scene1__svg--turtle, .scene1__svg--wave, .scene1__svg--crab, .scene1__title, .scene1__text {
+.beach__svg--beach, .beach__svg--umbrella, .beach__svg--fish1, .beach__svg--fish2, .beach__svg--turtle, .beach__svg--wave, .beach__svg--crab, .beach__title, .beach__text {
   z-index: 1;
+}
+.beach__svg {
+  position: absolute;
+}
+.beach__svg--beach {
+  width: 12vh;
+  top: 43%;
+  right: 15%;
+}
+.beach__svg--umbrella {
+  width: 15vh;
+  top: 42%;
+  left: 15%;
+}
+.beach__svg--turtle {
+  width: 10vh;
+  top: 80%;
+  left: 20%;
+}
+.beach__svg--fish1 {
+  width: 8vh;
+  top: 70%;
+  right: 15%;
+}
+.beach__svg--fish2 {
+  width: 8vh;
+  top: 70%;
+  left: 10%;
+}
+.beach__svg--wave {
+  width: 40vh;
+  bottom: 0;
+  left: 40%;
+  opacity: 0.3;
+  animation: wave 5s ease-in-out infinite;
+}
+.beach__svg--crab {
+  width: 5vh;
+  top: 52%;
+  left: 50%;
+}
+.beach__svg--turtle, .beach__svg--fish1, .beach__svg--fish2 {
+  animation: swim 3s ease-in-out infinite;
 }
 
 @keyframes title {
@@ -347,73 +449,301 @@ a:hover {
     transform: translate(-10%, 5px);
   }
 }
-.scene2 {
+@keyframes swim {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+}
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+.corals {
   position: relative;
   background: linear-gradient(to top, #0b46b4, #263b80);
   height: 100vh;
   color: #f0f0f0;
+  /*
+  // Intersection observer 
+  &__text, 
+  &__svg {
+      //only visible when in viewport
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease, transform 1s ease;
+  }
+  &.visible .scene2__text, 
+  &.visible .scene2__svg {
+      opacity: 1;
+      transform: translateY(0);
+  }*/
 }
-.scene2__text {
+.corals__text {
   max-width: 50%;
   font-size: 1.5rem;
   position: absolute;
   font-weight: bold;
-}
-.scene2__text--first {
-  top: 15%;
+  top: 20%;
   left: 10%;
 }
-.scene2__text--second {
-  top: 50%;
-  left: 50%;
+.corals__svg {
+  position: absolute;
 }
-.scene2__text--third {
-  bottom: 15%;
-  right: 20%;
-  z-index: 2;
+.corals__svg--seaweed1 {
+  width: 50vh;
+  bottom: 0;
+  left: 0;
 }
-.scene2__text, .scene2__svg {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 1s ease, transform 1s ease;
+.corals__svg--seaweed2 {
+  width: 50vh;
+  bottom: 0;
+  right: 0;
 }
-.scene2.visible .scene2__text, .scene2.visible .scene2__svg {
-  opacity: 1;
-  transform: translateY(0);
+.corals__svg--seabottom {
+  width: 50vh;
+  bottom: 0;
+  left: 40%;
 }
 
-.scene3 {
-  height: 100vh;
+.ecosystems {
   position: relative;
-  background: linear-gradient(to bottom, #0b46b4, rgb(7, 43, 67), rgb(7, 43, 67), black);
+  background: linear-gradient(to bottom, #0b46b4, #263b80);
+  height: 100vh;
   color: #f0f0f0;
+  /*
+  // Intersection observer 
+  &__text, 
+  &__svg {
+      //only visible when in viewport
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease, transform 1s ease;
+  }
+  &.visible .scene2__text, 
+  &.visible .scene2__svg {
+      opacity: 1;
+      transform: translateY(0);
+  }*/
 }
-.scene3__text {
-  max-width: 50%;
+.ecosystems__text {
+  max-width: 60vw;
   font-size: 1.5rem;
   position: absolute;
   font-weight: bold;
+  top: 60%;
+  left: 50%;
 }
-.scene3__text--first {
+.ecosystems__svg {
+  position: absolute;
+}
+.ecosystems__svg--dolphin {
+  width: 50vh;
+  top: 10%;
+  right: 30%;
+}
+.ecosystems__svg--jellyfish {
+  width: 15vh;
+  top: 15%;
+  right: 10%;
+}
+.ecosystems__svg--fishes {
+  width: 25vh;
+  top: 20%;
+  left: 10%;
+}
+.ecosystems__svg--green-fish {
+  width: 20vh;
+  bottom: 15%;
+  left: 10%;
+}
+
+.scroll {
+  position: relative;
+  background: linear-gradient(to top, #0b46b4, #263b80);
+  height: 100vh;
+  color: #f0f0f0;
+  /*
+  // Intersection observer 
+  &__text, 
+  &__svg {
+      //only visible when in viewport
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease, transform 1s ease;
+  }
+  &.visible .scene2__text, 
+  &.visible .scene2__svg {
+      opacity: 1;
+      transform: translateY(0);
+  }*/
+}
+.scroll__text {
+  max-width: 50%;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.scroll__text span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.scroll__svg {
+  position: absolute;
+}
+.scroll__svg--arrow {
+  width: 10vh;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.changing {
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(to bottom, #0b46b4, rgb(7, 43, 67), rgb(7, 43, 67));
+  color: #f0f0f0;
+  /*
+  // Intersection observer 
+  &__text, 
+  &__svg {
+      //only visible when in viewport
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease, transform 1s ease;
+  }
+  &.visible .scene3__text, 
+  &.visible .scene3__svg {
+      opacity: 1;
+      transform: translateY(0);
+  }*/
+}
+.changing__text {
+  max-width: 50%;
+  font-size: 4rem;
+  position: absolute;
+  font-weight: bold;
   top: 15%;
   right: 8%;
 }
-.scene3__text--second {
+
+.pollution {
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(to bottom, rgb(7, 43, 67), black);
+  color: #f0f0f0;
+  /*
+  // Intersection observer 
+  &__text, 
+  &__svg {
+      //only visible when in viewport
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease, transform 1s ease;
+  }
+  &.visible .scene3__text, 
+  &.visible .scene3__svg {
+      opacity: 1;
+      transform: translateY(0);
+  }*/
+}
+.pollution__text {
+  max-width: 50%;
+  font-size: 1.5rem;
+  position: absolute;
+  font-weight: bold;
   top: 40%;
   left: 10%;
 }
-.scene3__text--third {
+.pollution__svg {
+  position: absolute;
+}
+.pollution__svg--anchor {
+  width: 30vh;
+  bottom: 15%;
+  right: 10%;
+}
+.pollution__svg--bottle {
+  width: 15vh;
   top: 60%;
+  left: 10%;
+}
+.pollution__svg--dirt {
+  width: 10vh;
+  top: 15%;
+  right: 10%;
+}
+.pollution__svg--oil {
+  width: 40vh;
+  bottom: 8%;
+  left: 25%;
+}
+
+.plastic {
+  height: 100vh;
+  position: relative;
+  background-color: black;
+  color: #f0f0f0;
+  /*
+  // Intersection observer 
+  &__text, 
+  &__svg {
+      //only visible when in viewport
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease, transform 1s ease;
+  }
+  &.visible .scene3__text, 
+  &.visible .scene3__svg {
+      opacity: 1;
+      transform: translateY(0);
+  }*/
+}
+.plastic__text {
+  max-width: 50%;
+  font-size: 1.5rem;
+  position: absolute;
+  font-weight: bold;
+  top: 20%;
   left: 30%;
 }
-.scene3__text, .scene3__svg {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 1s ease, transform 1s ease;
+.plastic__svg {
+  position: absolute;
 }
-.scene3.visible .scene3__text, .scene3.visible .scene3__svg {
-  opacity: 1;
-  transform: translateY(0);
+.plastic__svg--fishbone1 {
+  width: 20vh;
+  top: 50%;
+  left: 5%;
+}
+.plastic__svg--fishbone2 {
+  width: 15vh;
+  top: 60%;
+  left: 18%;
+}
+.plastic__svg--garbage {
+  width: 20vh;
+  top: 50%;
+  right: 15%;
+}
+.plastic__svg--plastic {
+  width: 15vh;
+  bottom: 20%;
+  left: 50%;
+}
+.plastic__svg--bandage {
+  width: 10vh;
+  top: 5%;
+  right: 10%;
 }
 
 .scene4 {

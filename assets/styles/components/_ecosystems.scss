@@ -1,32 +1,46 @@
 @use '../base/global' as *;
 
-.scene2 {
+.ecosystems {
     position: relative;
-    background: linear-gradient(to top, $button-color, $primary-color);
+    background: linear-gradient(to bottom, $button-color, $primary-color);
     height: 100vh;
     color: $text-color-light;
 
     &__text {
-        max-width: 50%;
+        max-width: 60vw;
         font-size: $font-l;
         position: absolute;
         font-weight: bold;
+        top: 60%;
+        left: 50%;
+    }
 
-        &--first {
+    &__svg {
+        position: absolute; // all svg elements are absolute
+     
+        &--dolphin {
+            width: 50vh;
+            top: 10%;
+            right: 30%;
+        }
+        &--jellyfish {
+            width: 15vh;
             top: 15%;
+            right: 10%;
+        }
+        &--fishes {
+            width: 25vh;
+            top: 20%;
             left: 10%;
         }
-        &--second {
-            top: 50%;
-            left: 50%;
-        }
-        &--third {
+        &--green-fish {
+            width: 20vh;
             bottom: 15%;
-            right: 20%;
-            z-index: 2;
+            left: 10%;
         }
     }
 
+    /*
     // Intersection observer 
     &__text, 
     &__svg {
@@ -39,5 +53,5 @@
     &.visible .scene2__svg {
         opacity: 1;
         transform: translateY(0);
-    }
+    }*/
 }

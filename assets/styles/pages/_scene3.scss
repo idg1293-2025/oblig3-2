@@ -1,1 +1,6 @@
 @use '../base/global' as *;
+
+.scene3 {
+    z-index: 3;
+    height: 100vh;
+}

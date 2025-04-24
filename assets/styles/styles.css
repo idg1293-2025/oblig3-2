@@ -126,10 +126,58 @@ a:hover {
     transform: translateY(10px);
   }
 }
+.scene2__svg {
+  position: absolute;
+}
+.scene2__svg--seaweed1 {
+  width: 15%;
+  bottom: 0;
+  left: 0;
+}
+.scene2__svg--seaweed2 {
+  width: 15%;
+  bottom: 0;
+  right: 2%;
+}
+.scene2__svg--dolphin {
+  width: 15%;
+  top: 20%;
+  right: 20%;
+}
+.scene2__svg--jellyfish {
+  width: 10%;
+  top: 10%;
+  right: 10%;
+}
+.scene2__svg--seabottom {
+  width: 15%;
+  bottom: 0;
+  left: 15%;
+}
+.scene2__svg--fishes {
+  width: 15%;
+  top: 40%;
+  left: 25%;
+}
+.scene2__svg--green-fish {
+  width: 8%;
+  top: 50%;
+  left: 8%;
+}
+
+.scene3__svg {
+  position: absolute;
+}
+
+.scene4__svg {
+  position: absolute;
+}
+
 .scene1 {
   position: relative;
   background: linear-gradient(to left, #96d5ff, #d7efff);
   height: 100vh;
+  z-index: 1;
 }
 .scene1__title {
   font-size: 3rem;
@@ -199,6 +247,41 @@ a:hover {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.scene2 {
+  position: relative;
+  background: linear-gradient(to top, #0b46b4, #263b80);
+  height: 100vh;
+  color: #f0f0f0;
+  z-index: 2;
+}
+.scene2__text {
+  max-width: 50%;
+  font-size: 1.5rem;
+  position: absolute;
+  font-weight: bold;
+}
+.scene2__text--first {
+  top: 15%;
+  left: 10%;
+}
+.scene2__text--second {
+  top: 50%;
+  left: 50%;
+}
+.scene2__text--third {
+  top: 80%;
+  right: 20%;
+}
+
+.scene3 {
+  z-index: 3;
+  height: 100vh;
+}
+
+.scene4 {
+  z-index: 4;
+  height: 100vh;
 }
 .scene4__button {
   text-decoration: none;

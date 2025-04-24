@@ -1,7 +1,9 @@
 @use '../base/global' as *;
 
 .scene4 {
-
+    z-index: 4;
+    height: 100vh;
+    
     &__button {
         text-decoration: none;
     }

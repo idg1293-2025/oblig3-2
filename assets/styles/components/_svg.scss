@@ -90,6 +90,47 @@
 // SCENE 2 - THE OCEAN'S BEAUTY
 
 // SVG positions for scene 2
+.scene2 {
+    &__svg {
+        position: absolute; // all svg elements are absolute
+        
+        &--seaweed1 {
+            width: 15%;
+            bottom: 0;
+            left: 0;
+        }
+        &--seaweed2 {
+            width: 15%;
+            bottom: 0;
+            right: 2%;
+        }
+        &--dolphin {
+            width: 15%;
+            top: 20%;
+            right: 20%;
+        }
+        &--jellyfish {
+            width: 10%;
+            top: 10%;
+            right: 10%;
+        }
+        &--seabottom {
+            width: 15%;
+            bottom: 0;
+            left: 15%;
+        }
+        &--fishes {
+            width: 15%;
+            top: 40%;
+            left: 25%;
+        }
+        &--green-fish {
+            width: 8%;
+            top: 50%;
+            left: 8%;
+        }
+    }
+}
 
 // Animations for scene 2
 
@@ -97,13 +138,24 @@
 // SCENE 3 - THE THREATS
 
 // SVG positions for scene 3
-
+.scene3 {
+    &__svg {
+        position: absolute; // all svg elements are absolute
+    
+    }
+}
 // Animations for scene 3
 
 
 // SCENE 4 - CALL TO ACTION
 
 // SVG positions for scene 4
+.scene4 {
+    &__svg {
+        position: absolute; // all svg elements are absolute
+    
+    }
+}
 
 // Animations for scene 4
 

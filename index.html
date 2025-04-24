@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Scene 1: Introduction - Above the surface-->
-    <section class="scene1">
+    <section class="scene scene1">
 
         <!-- svgs -->
         <img class="scene1__svg scene1__svg--sun" src="assets/images/scene1/sun.svg" alt="Sun">
@@ -33,14 +33,14 @@
             <path id="fly-back" d="M400,100 C300,150 100,50 0,100" fill="none" stroke="transparent"/>
             
             <image href="assets/images/scene1/bird.svg" width="30" height="30">
-              <!-- fly forward -->
-              <animateMotion id="forward" dur="6s" repeatCount="1" begin="0s;back.end" >
+            <!-- fly forward -->
+            <animateMotion id="forward" dur="6s" repeatCount="1" begin="0s;back.end" >
                 <mpath href="#fly-path" />
-              </animateMotion>
-              <!-- fly back -->
-              <animateMotion id="back" dur="6s" repeatCount="1" begin="forward.end">
+            </animateMotion>
+            <!-- fly back -->
+            <animateMotion id="back" dur="6s" repeatCount="1" begin="forward.end">
                 <mpath href="#fly-back" />
-              </animateMotion>
+            </animateMotion>
             </image>
         </svg>
 
@@ -50,34 +50,33 @@
         
     </section>
 
-    <!-- Scene 2: Water - The ocean's beauty -->
-    <section class="scene2 mb">
-        <p class="scene2__text">
-            Beneath the waves is an underwater paradise — coral reefs, sparkling fish, and all kinds of creatures. 
-            The ocean regulates our climate, provides food, and is home to amazing ecosystems.
-        </p>
-        <p class="scene2__text">
-            Let's dive in and see what’s going on beneath the surface!
-        </p>
-    </section>
-    
-    <!-- Scene 3: Pollution - The threats -->
-    <section class="scene3 mb">
+<!-- Scene 2: Water - The ocean's beauty -->
+    <section class="scene scene2 mb">
 
-        <p class="scene3__text">
-            But things are changing and the oceans are in trouble. 
-        </p>
-        <p class="scene3__text">
-            The ocean isn't the beautiful place it once was. Pollution is everywhere: 
-            plastic waste, oil spills, abandoned fishing nets. 
-        </p>
-        <p class="scene3__text">
-            Every year, millions of tons of plastic end up in the ocean, harming fish, coral reefs, and even the air we breathe.
-        </p>
+        <img class="scene2__svg scene2__svg--seaweed1" src="assets/images/scene2/seaweed.svg" alt="Seaweed 1">
+        <img class="scene2__svg scene2__svg--seaweed2" src="assets/images/scene2/seaweed1.svg" alt="Seaweed 2">
+        <img class="scene2__svg scene2__svg--jellyfish" src="assets/images/scene2/jellyfish2.svg" alt="Jellyfish">
+        <img class="scene2__svg scene2__svg--dolphin" src="assets/images/scene2/dolphin.svg" alt="Dolphin">
+        <img class="scene2__svg scene2__svg--seabottom" src="assets/images/scene2/sea-bottom.svg" alt="Sea bottom">
+        <img class="scene2__svg scene2__svg--fishes" src="assets/images/scene2/fishes.svg" alt="Several fishes">
+        <img class="scene2__svg scene2__svg--green-fish" src="assets/images/scene2/fish3.svg" alt="Green fish">
+
+        <p class="scene2__text scene2__text--first">Beneath the waves is an underwater paradise — coral reefs, sparkling fish, and all kinds of creatures.</p>
+        <p class="scene2__text scene2__text--second">The ocean regulates our climate, provides food, and is home to amazing ecosystems.</p>
+        <p class="scene2__text scene2__text--third">Let's dive in and see what’s going on beneath the surface!</p>
     </section>
 
-    <!-- Scene 4: Call to action-->
-    <section class="scene4 mb">
+<!-- Scene 3: Pollution - The threats -->
+    <section class="scene scene3 mb">
+
+        <p class="scene3__text scene3__text--first">But things are changing and the oceans are in trouble. </p>
+        <p class="scene3__text scene3__text--second">The ocean isn't the beautiful place it once was. Pollution is everywhere: 
+            plastic waste, oil spills, abandoned fishing nets.</p>
+        <p class="scene3__text scene3__text--third">Every year, millions of tons of plastic end up in the ocean, harming fish, coral reefs, and even the air we breathe.</p>
+    </section>
+
+<!-- Scene 4: Call to action-->
+    <section class="scene scene4 mb">
 
         <p class="scene4__text">
             It’s time to act. Together, we can make a real difference and protect the ocean for future generations.

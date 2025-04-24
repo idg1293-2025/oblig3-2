@@ -5,7 +5,6 @@
     background: linear-gradient(to top, $button-color, $primary-color);
     height: 100vh;
     color: $text-color-light;
-    z-index: 2;
 
     &__text {
         max-width: 50%;
@@ -22,8 +21,23 @@
             left: 50%;
         }
         &--third {
-            top: 80%;
+            bottom: 15%;
             right: 20%;
+            z-index: 2;
         }
+    }
+
+    // Intersection observer 
+    &__text, 
+    &__svg {
+        //only visible when in viewport
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1s ease, transform 1s ease;
+    }
+    &.visible .scene2__text, 
+    &.visible .scene2__svg {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

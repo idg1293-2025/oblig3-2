@@ -1,9 +1,10 @@
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: rgb(7, 43, 67);
   color: #393939;
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
@@ -19,11 +20,18 @@ h3 {
 
 a {
   color: #393939;
+  text-decoration: none;
 }
 a:hover {
-  color: #0b46b4;
+  color: #263b80;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -164,6 +172,12 @@ a:hover {
   top: 50%;
   left: 8%;
 }
+.scene2__svg--arrow {
+  width: 5%;
+  bottom: 2%;
+  left: 50%;
+  cursor: pointer;
+}
 
 .scene3__svg {
   position: absolute;
@@ -268,7 +282,7 @@ a:hover {
   top: 45%;
   animation: text 1.5s ease-out forwards;
   opacity: 0;
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 .scene1__text--second {
   left: 35%;
@@ -276,7 +290,14 @@ a:hover {
   color: #f0f0f0;
   animation: text 1.5s ease-out forwards;
   opacity: 0;
-  animation-delay: 7s;
+  animation-delay: 2s;
+}
+.scene1__text--third {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  color: #f0f0f0;
+  animation: bounce 2s infinite;
 }
 .scene1__surface {
   position: absolute;
@@ -318,12 +339,19 @@ a:hover {
     transform: translateY(0);
   }
 }
+@keyframes bounce {
+  0%, 100% {
+    transform: translate(-10%, 0);
+  }
+  50% {
+    transform: translate(-10%, 5px);
+  }
+}
 .scene2 {
   position: relative;
   background: linear-gradient(to top, #0b46b4, #263b80);
   height: 100vh;
   color: #f0f0f0;
-  z-index: 2;
 }
 .scene2__text {
   max-width: 50%;
@@ -340,8 +368,18 @@ a:hover {
   left: 50%;
 }
 .scene2__text--third {
-  top: 80%;
+  bottom: 15%;
   right: 20%;
+  z-index: 2;
+}
+.scene2__text, .scene2__svg {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.scene2.visible .scene2__text, .scene2.visible .scene2__svg {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .scene3 {
@@ -349,7 +387,6 @@ a:hover {
   position: relative;
   background: linear-gradient(to bottom, #0b46b4, rgb(7, 43, 67), rgb(7, 43, 67), black);
   color: #f0f0f0;
-  z-index: 3;
 }
 .scene3__text {
   max-width: 50%;
@@ -369,13 +406,21 @@ a:hover {
   top: 60%;
   left: 30%;
 }
+.scene3__text, .scene3__svg {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.scene3.visible .scene3__text, .scene3.visible .scene3__svg {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .scene4 {
   height: 100vh;
   position: relative;
   background: linear-gradient(to bottom, black 0%, #263b80 30%, #96d5ff 60%, #d7efff 100%);
   color: #f0f0f0;
-  z-index: 4;
 }
 .scene4__text {
   max-width: 70%;
@@ -385,6 +430,7 @@ a:hover {
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
+  top: 10%;
 }
 .scene4__text--first {
   top: 8%;
@@ -394,14 +440,10 @@ a:hover {
   font-size: 1.5rem;
 }
 .scene4__text--third {
-  top: 35%;
-  background-color: rgb(7, 43, 67);
-  padding: 1rem;
-  border-radius: 1rem;
+  top: 40%;
 }
 .scene4__text--fourth {
   top: 55%;
-  font-size: 0.75rem;
   color: #393939;
 }
 .scene4__text--fifth {
@@ -410,21 +452,27 @@ a:hover {
 }
 .scene4__link {
   position: absolute;
-  bottom: 10%;
+  bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
 }
 .scene4__button {
-  text-decoration: none;
   position: absolute;
-  bottom: 1%;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
+}
+.scene4__text, .scene4__svg, .scene4__link, .scene4__button {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.scene4.visible .scene4__text, .scene4.visible .scene4__svg, .scene4.visible .scene4__link, .scene4.visible .scene4__button {
+  opacity: 1;
 }
 
 button {
   display: block;
-  background-color: #0b46b4;
+  background-color: rgb(7, 43, 67);
   color: #f0f0f0;
   border: 1px solid transparent;
   border-radius: 1rem;

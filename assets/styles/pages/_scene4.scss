@@ -5,7 +5,6 @@
     position: relative;
     background: linear-gradient(to bottom, black 0%, $primary-color 30%, $secondary-color 60%, $tertiary-color 100%);
     color: $text-color-light;
-    z-index: 4;
 
     &__text {
         max-width: 70%;
@@ -16,6 +15,8 @@
         left: 50%; 
         transform: translateX(-50%);
 
+        top: 10%;
+
         &--first {
             top: 8%;
             
@@ -25,14 +26,10 @@
             font-size: $font-l;
         }
         &--third {
-            top: 35%;
-            background-color: $dark-color;
-            padding: $spacing-m;
-            border-radius: 1rem;
+            top: 40%;
         }
         &--fourth {
             top: 55%;
-            font-size: $font-s;
             color: $text-color-dark;
 
         }
@@ -44,25 +41,39 @@
 
     &__link {
         position: absolute;
-        bottom: 10%;
+        bottom: 20%;
         left: 50%; 
         transform: translateX(-50%);
     }
 
     &__button {
-        text-decoration: none;
         position: absolute;
-        bottom: 1%;
+        bottom: 10%;
         left: 50%; 
         transform: translateX(-50%);
     }
 
+    // Intersection observer 
+    &__text, 
+    &__svg,
+    &__link,
+    &__button {
+        //only visible when in viewport
+        opacity: 0;
+        transition: opacity 1s ease; 
+    }
     
+    &.visible .scene4__text, 
+    &.visible .scene4__svg,
+    &.visible .scene4__link,
+    &.visible .scene4__button {
+        opacity: 1;
+    }
 }
 
 button {
     display: block;
-    background-color: $button-color;
+    background-color: $dark-color;
     color: $text-color-light;
     border: 1px solid transparent; 
     border-radius: 1rem;

@@ -26,7 +26,7 @@
             top: 45%;
             animation: text 1.5s ease-out forwards;
             opacity: 0;
-            animation-delay: 3s;
+            animation-delay: 2s;
         }
         &--second {
             left: 35%;
@@ -34,7 +34,14 @@
             color: $text-color-light;
             animation: text 1.5s ease-out forwards;
             opacity: 0;
-            animation-delay: 7s;
+            animation-delay: 2s;
+        }
+        &--third {
+            position: absolute;
+            bottom: 5%;
+            right: 0;
+            color: $text-color-light;
+            animation: bounce 2s infinite;
         }
     }
 
@@ -67,13 +74,13 @@
     &__svg--turtle,
     &__svg--wave,
     &__svg--crab,
-
     &__title,
     &__text {
         z-index: 1; // all elements on top of ocean and surface
     }
 }
 
+// Animations for title and text in scene 1
 @keyframes title {
     0% { opacity: 0; transform: translateX(-20px); }
     100% { opacity: 1; transform: translateX(0); }
@@ -82,3 +89,7 @@
     0% { opacity: 0; transform: translateY(20px); }
     100% { opacity: 1; transform: translateY(0); }
 }
+@keyframes bounce {
+    0%, 100% { transform: translate(-10%, 0); }
+    50% { transform: translate(-10%, 5px); }
+  }

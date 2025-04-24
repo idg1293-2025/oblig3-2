@@ -10,7 +10,10 @@ This project is a scrollytelling that focuses on Sustainable Development Goal 14
 
 
 ## Brainstorming 
-- Points discussed during the braimstorming session.
+In the beginning of the project, we held a brainstorming session to generate ideas. We began to review UN SDG goals. After looking at each goal, we ended up choosing between SDG 14 and SDG 3. We quickly agreed on SDG 14: Life Below Water, because we felt that it had more visual potential and an environmental message. 
+We discussed different narratives on how to style and structure the page. One idea that stood out was to use scrolling as a metaphor for diving. We did a small sketch of the page layout so that we could work in that direction. We also discussed what kinds of animations and interactivity we could use. We talked about fish swimming by, trash floating, light changing as you go further down and so on.  
+We also used ChatGPT during our brainstorming session to help us refine our ideas. It helped us explore creative ideas, develop the structure of our story, and helped us with a work plan to get started and how to delegate the work in the group. 
+
 
 
 ## Storyboard

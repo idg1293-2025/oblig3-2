@@ -141,7 +141,47 @@
 .scene3 {
     &__svg {
         position: absolute; // all svg elements are absolute
-    
+        
+        &--anchor {
+            width: 10%;
+            bottom: 2%;
+            right: 5%;
+        }
+        &--bottle {
+            width: 8%;
+            top: 60%;
+            left: 10%;
+        }
+        &--dirt {
+            width: 6%;
+            top: 10%;
+            left: 10%;
+        }
+        &--fishbone {
+            width: 8%;
+            top: 30%;
+            right: 10%;
+        }
+        &--garbage {
+            width: 8%;
+            top: 50%;
+            right: 2%;
+        }
+        &--plastic {
+            width: 8%;
+            top: 10%;
+            left: 25%;
+        }
+        &--oil {
+            width: 13%;
+            bottom: 8%;
+            left: 25%;
+        }
+        &--bandage {
+            width: 8%;
+            bottom: 5%;
+            left: 3%;
+        }
     }
 }
 // Animations for scene 3
@@ -154,6 +194,36 @@
     &__svg {
         position: absolute; // all svg elements are absolute
     
+        &--eco {
+            width: 10%;
+            top: 5%;
+            left: 5%;
+        }
+        &--drop {
+            width: 10%;
+            top: 5%;
+            right: 5%;
+        }
+        &--nemo {
+            width: 10%;
+            top: 40%;
+            left: 5%;
+        }
+        &--seaweed-pink {
+            width: 15%;
+            bottom: 0;
+            left: 5%;
+        }
+        &--seaweed-blue {
+            width: 15%;
+            bottom: 0;
+            right: 5%;
+        }
+        &--starfish {
+            width: 10%;
+            top: 40%;
+            right: 5%;
+        }
     }
 }
 

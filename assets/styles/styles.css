@@ -168,9 +168,79 @@ a:hover {
 .scene3__svg {
   position: absolute;
 }
+.scene3__svg--anchor {
+  width: 10%;
+  bottom: 2%;
+  right: 5%;
+}
+.scene3__svg--bottle {
+  width: 8%;
+  top: 60%;
+  left: 10%;
+}
+.scene3__svg--dirt {
+  width: 6%;
+  top: 10%;
+  left: 10%;
+}
+.scene3__svg--fishbone {
+  width: 8%;
+  top: 30%;
+  right: 10%;
+}
+.scene3__svg--garbage {
+  width: 8%;
+  top: 50%;
+  right: 2%;
+}
+.scene3__svg--plastic {
+  width: 8%;
+  top: 10%;
+  left: 25%;
+}
+.scene3__svg--oil {
+  width: 13%;
+  bottom: 8%;
+  left: 25%;
+}
+.scene3__svg--bandage {
+  width: 8%;
+  bottom: 5%;
+  left: 3%;
+}
 
 .scene4__svg {
   position: absolute;
+}
+.scene4__svg--eco {
+  width: 10%;
+  top: 5%;
+  left: 5%;
+}
+.scene4__svg--drop {
+  width: 10%;
+  top: 5%;
+  right: 5%;
+}
+.scene4__svg--nemo {
+  width: 10%;
+  top: 40%;
+  left: 5%;
+}
+.scene4__svg--seaweed-pink {
+  width: 15%;
+  bottom: 0;
+  left: 5%;
+}
+.scene4__svg--seaweed-blue {
+  width: 15%;
+  bottom: 0;
+  right: 5%;
+}
+.scene4__svg--starfish {
+  width: 10%;
+  top: 40%;
+  right: 5%;
 }
 
 .scene1 {
@@ -275,16 +345,81 @@ a:hover {
 }
 
 .scene3 {
-  z-index: 3;
   height: 100vh;
+  position: relative;
+  background: linear-gradient(to bottom, #0b46b4, rgb(7, 43, 67), rgb(7, 43, 67), black);
+  color: #f0f0f0;
+  z-index: 3;
+}
+.scene3__text {
+  max-width: 50%;
+  font-size: 1.5rem;
+  position: absolute;
+  font-weight: bold;
+}
+.scene3__text--first {
+  top: 15%;
+  right: 8%;
+}
+.scene3__text--second {
+  top: 40%;
+  left: 10%;
+}
+.scene3__text--third {
+  top: 60%;
+  left: 30%;
 }
 
 .scene4 {
-  z-index: 4;
   height: 100vh;
+  position: relative;
+  background: linear-gradient(to bottom, black 0%, #263b80 30%, #96d5ff 60%, #d7efff 100%);
+  color: #f0f0f0;
+  z-index: 4;
+}
+.scene4__text {
+  max-width: 70%;
+  font-size: 1rem;
+  position: absolute;
+  font-weight: bold;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.scene4__text--first {
+  top: 8%;
+}
+.scene4__text--second {
+  top: 20%;
+  font-size: 1.5rem;
+}
+.scene4__text--third {
+  top: 35%;
+  background-color: rgb(7, 43, 67);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.scene4__text--fourth {
+  top: 55%;
+  font-size: 0.75rem;
+  color: #393939;
+}
+.scene4__text--fifth {
+  top: 70%;
+  color: #393939;
+}
+.scene4__link {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .scene4__button {
   text-decoration: none;
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 button {

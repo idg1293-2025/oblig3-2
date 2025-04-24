@@ -1,6 +1,29 @@
 @use '../base/global' as *;
 
 .scene3 {
-    z-index: 3;
     height: 100vh;
+    position: relative;
+    background: linear-gradient(to bottom, $button-color, $dark-color, $dark-color, black);
+    color: $text-color-light;
+    z-index: 3;
+
+    &__text {
+        max-width: 50%;
+        font-size: $font-l;
+        position: absolute;
+        font-weight: bold;
+
+        &--first {
+            top: 15%;
+            right: 8%;
+        }
+        &--second {
+            top: 40%;
+            left: 10%;
+        }
+        &--third {
+            top: 60%;
+            left: 30%;
+        }
+    }
 }

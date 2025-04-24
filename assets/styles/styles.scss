@@ -1,8 +1,6 @@
 @use 'base/global';
 @use 'base/reset';
 
-@use 'components/svg';
-
 // part 1 - above the surface
 @use 'components/introduction';
 @use 'components/sky';
@@ -19,8 +17,10 @@
 @use 'components/plastic';
 
 // part 4 - call to action
+@use 'components/background';
+@use 'components/cta';
+@use 'components/acts';
+@use 'components/readmore';
 
-
-@use 'pages/scene4';
 
 @use 'utilities/utilities';

@@ -37,231 +37,6 @@ a:hover {
   box-sizing: border-box;
 }
 
-/*
-.beach {
-    &__svg {
-        position: absolute; // all svg elements are absolute
-
-        &--beach {
-            width: 7%;
-            top: 43%;
-            right: 8%;
-        }
-        &--umbrella {
-            width: 7%;
-            top: 42%;
-            right: 25%;
-        }
-        &--turtle {
-            width: 5%;
-            top: 80%;
-            left: 20%;
-        }
-        &--fish1 {
-            width: 5%;
-            top: 70%;
-            right: 20%;
-        }
-        &--fish2 {
-            width: 5%;
-            top: 70%;
-            left: 10%;
-        }
-        &--wave {
-            width: 25%;
-            bottom: 0;
-            left: 40%;
-            opacity: 0.3;
-            animation: wave 5s ease-in-out infinite;
-        }
-        &--crab {
-            width: 3%;
-            top: 52%;
-            left: 40%;
-        }
-        &--turtle,
-        &--fish1,
-        &--fish2 {
-            animation: swim 3s ease-in-out infinite;
-        }
-    }
-}
-
-// SKY SCENE
-.sky {
-    &__svg {
-        position: absolute; // all svg elements are absolute
-
-        &--sun {
-            width: 12%;
-            top: 2%;
-            left: 2%;
-            animation: sun 5s infinite ease-in-out;
-        }
-        &--cloud {
-            width: 10%;
-            top: 5%;
-            right: 15%;
-            animation: cloud 3s linear infinite;
-        }
-        &--bird {
-            width: 5%;
-            top: 10%;
-            left: 50%;
-        }
-    }
-}
-
-// Animations for scene 1
-@keyframes sun {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-}
-@keyframes cloud {
-    0% { transform: translateX(0); }
-    50% { transform: translateX(10px); }
-    100% { transform: translateX(0); }
-}
-@keyframes swim {
-    0%, 100% { transform: translateX(0); }
-    50% { transform: translateX(15px); }
-}
-@keyframes wave {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(10px); }
-}
-*/
-/*
-// SVG positions for scene 2
-.scene2 {
-    &__svg {
-        position: absolute; // all svg elements are absolute
-
-        &--seaweed1 {
-            width: 15%;
-            bottom: 0;
-            left: 0;
-        }
-        &--seaweed2 {
-            width: 15%;
-            bottom: 0;
-            right: 2%;
-        }
-        &--dolphin {
-            width: 15%;
-            top: 20%;
-            right: 20%;
-        }
-        &--jellyfish {
-            width: 10%;
-            top: 10%;
-            right: 10%;
-        }
-        &--seabottom {
-            width: 15%;
-            bottom: 0;
-            left: 15%;
-        }
-        &--fishes {
-            width: 15%;
-            top: 40%;
-            left: 25%;
-        }
-        &--green-fish {
-            width: 8%;
-            top: 50%;
-            left: 8%;
-        }
-        &--arrow {
-            width: 5%;
-            bottom: 2%;
-            left: 50%;
-            cursor: pointer;
-        }
-    }
-}
-*/
-/*
-.scene3 {
-    &__svg {
-        position: absolute; // all svg elements are absolute
-
-        &--anchor {
-            width: 10%;
-            bottom: 2%;
-            right: 5%;
-        }
-        &--bottle {
-            width: 8%;
-            top: 60%;
-            left: 10%;
-        }
-        &--dirt {
-            width: 6%;
-            top: 10%;
-            left: 10%;
-        }
-        &--fishbone {
-            width: 8%;
-            top: 30%;
-            right: 10%;
-        }
-        &--garbage {
-            width: 8%;
-            top: 50%;
-            right: 2%;
-        }
-        &--plastic {
-            width: 8%;
-            top: 10%;
-            left: 25%;
-        }
-        &--oil {
-            width: 13%;
-            bottom: 8%;
-            left: 25%;
-        }
-        &--bandage {
-            width: 8%;
-            bottom: 5%;
-            left: 3%;
-        }
-    }
-}*/
-.scene4__svg {
-  position: absolute;
-}
-.scene4__svg--eco {
-  width: 10%;
-  top: 5%;
-  left: 5%;
-}
-.scene4__svg--drop {
-  width: 10%;
-  top: 5%;
-  right: 5%;
-}
-.scene4__svg--nemo {
-  width: 10%;
-  top: 40%;
-  left: 5%;
-}
-.scene4__svg--seaweed-pink {
-  width: 15%;
-  bottom: 0;
-  left: 5%;
-}
-.scene4__svg--seaweed-blue {
-  width: 15%;
-  bottom: 0;
-  right: 5%;
-}
-.scene4__svg--starfish {
-  width: 10%;
-  top: 40%;
-  right: 5%;
-}
-
 .introduction {
   position: relative;
   background: linear-gradient(to left, #96d5ff, #d7efff);
@@ -585,8 +360,9 @@ a:hover {
   }*/
 }
 .scroll__text {
-  max-width: 50%;
+  max-width: 60%;
   font-size: 1.5rem;
+  text-align: center;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -746,58 +522,174 @@ a:hover {
   right: 10%;
 }
 
-.scene4 {
+.blue-background {
   height: 100vh;
   position: relative;
-  background: linear-gradient(to bottom, black 0%, #263b80 30%, #96d5ff 60%, #d7efff 100%);
-  color: #f0f0f0;
+  background: linear-gradient(to bottom, black, #263b80, #96d5ff);
+  /*
+  // Intersection observer 
+  &__text, 
+  &__svg,
+  &__link {
+      //only visible when in viewport
+      opacity: 0;
+      transition: opacity 1s ease; 
+  }
+
+  &.visible .scene4__text, 
+  &.visible .scene4__svg {
+      opacity: 1;
+  }*/
 }
-.scene4__text {
+
+.cta {
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(to bottom, #96d5ff, #d7efff);
+  color: #393939;
+  /*
+      // Intersection observer 
+      &__text, 
+      &__svg {
+          //only visible when in viewport
+          opacity: 0;
+          transition: opacity 1s ease; 
+      }
+
+      &.visible .scene4__text, 
+      &.visible .scene4__svg {
+          opacity: 1;
+      }*/
+}
+.cta__text {
   max-width: 70%;
-  font-size: 1rem;
   position: absolute;
   font-weight: bold;
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
-  top: 10%;
 }
-.scene4__text--first {
-  top: 8%;
+.cta__text--first {
+  top: 15%;
 }
-.scene4__text--second {
-  top: 20%;
+.cta__text--second {
+  top: 35%;
+  font-size: 4rem;
+}
+.cta__svg {
+  position: absolute;
+  width: 15vh;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.acts {
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(to bottom, #d7efff, #96d5ff);
+  color: #f0f0f0;
+  /*
+  // Intersection observer 
+  &__text, 
+  &__svg,
+  &__link {
+      //only visible when in viewport
+      opacity: 0;
+      transition: opacity 1s ease; 
+  }
+
+  &.visible .scene4__text, 
+  &.visible .scene4__svg {
+      opacity: 1;
+  }*/
+}
+.acts__text {
+  max-width: 70%;
+  color: #393939;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.acts__text--first {
+  top: 40vh;
   font-size: 1.5rem;
 }
-.scene4__text--third {
+.acts__text--second {
+  bottom: 15vh;
+}
+.acts__svg {
+  position: absolute;
+}
+.acts__svg--eco {
+  width: 15vh;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.acts__svg--nemo {
+  width: 15vh;
   top: 40%;
+  left: 5%;
 }
-.scene4__text--fourth {
-  top: 55%;
+.acts__svg--starfish {
+  width: 15vh;
+  top: 40%;
+  right: 5%;
+}
+
+.readmore {
+  height: 100vh;
+  position: relative;
+  background-color: #96d5ff;
   color: #393939;
+  /*
+  // Intersection observer 
+  &__text, 
+  &__svg,
+  &__link,
+  &__button {
+      //only visible when in viewport
+      opacity: 0;
+      transition: opacity 1s ease; 
+  }
+
+  &.visible .scene4__text, 
+  &.visible .scene4__svg,
+  &.visible .scene4__link,
+  &.visible .scene4__button {
+      opacity: 1;
+  }*/
 }
-.scene4__text--fifth {
-  top: 70%;
-  color: #393939;
-}
-.scene4__link {
+.readmore__text {
+  max-width: 70%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
   position: absolute;
-  bottom: 20%;
+  top: 30%;
   left: 50%;
   transform: translateX(-50%);
 }
-.scene4__button {
+.readmore__svg {
   position: absolute;
-  bottom: 10%;
+  width: 60vh;
+  bottom: 0;
+  left: 0;
+}
+.readmore__link {
+  position: absolute;
+  bottom: 40%;
   left: 50%;
   transform: translateX(-50%);
 }
-.scene4__text, .scene4__svg, .scene4__link, .scene4__button {
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-.scene4.visible .scene4__text, .scene4.visible .scene4__svg, .scene4.visible .scene4__link, .scene4.visible .scene4__button {
-  opacity: 1;
+.readmore__button {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 button {
@@ -811,7 +703,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background-color: #263b80;
+  background-color: #0b46b4;
 }
 
 .m-0 {

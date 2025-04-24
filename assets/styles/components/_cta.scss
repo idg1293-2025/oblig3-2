@@ -1,0 +1,46 @@
+@use '../base/global' as *;
+
+.cta {
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to bottom, $secondary-color, $tertiary-color);
+    color: $text-color-dark;
+
+    &__text {
+        max-width: 70%;
+        position: absolute;
+        font-weight: bold;
+        text-align: center;
+        left: 50%; 
+        transform: translateX(-50%);
+
+        &--first {
+            top: 15%;
+        }
+        &--second {
+            top: 35%;
+            font-size: $font-xl;
+        }
+    }
+
+    &__svg {
+        position: absolute;
+        width: 15vh;
+        bottom: 8%;
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+/*
+    // Intersection observer 
+    &__text, 
+    &__svg {
+        //only visible when in viewport
+        opacity: 0;
+        transition: opacity 1s ease; 
+    }
+    
+    &.visible .scene4__text, 
+    &.visible .scene4__svg {
+        opacity: 1;
+    }*/
+}

@@ -1,6 +1,7 @@
 @use '../base/global' as *;
 
-// SCENE 1 - Above the surface
+// SCENE 1 - ABOVE THE SURFACE
+// SVG positions for scene 1
 .scene1 {
     &__svg {
         position: absolute; // all svg elements are absolute
@@ -9,21 +10,28 @@
             width: 12%;
             top: 2%;
             left: 2%;
+            animation: sun 5s infinite ease-in-out;
         }
         &--cloud {
             width: 10%;
             top: 5%;
             right: 15%;
-        }
-        &--flower {
-            width: 5%;
-            top: 42%;
-            right: 15%;
+            animation: cloud 3s linear infinite;
         }
         &--bird {
             width: 5%;
             top: 10%;
-            left: 50%;; 
+            left: 50%;
+        }
+        &--beach {
+            width: 7%;
+            top: 43%;
+            right: 8%;
+        }
+        &--umbrella {
+            width: 7%;
+            top: 42%;
+            right: 25%;
         }
         &--turtle {
             width: 5%;
@@ -37,17 +45,68 @@
         }
         &--fish2 {
             width: 5%;
-            top: 80%;
-            left: 50%;
+            top: 70%;
+            left: 10%;
+        }
+        &--wave {
+            width: 25%;
+            bottom: 0;
+            left: 40%;
+            opacity: 0.3;
+            animation: wave 5s ease-in-out infinite;
+        }
+        &--crab {
+            width: 3%;
+            top: 52%;
+            left: 40%;
+        }
+        &--turtle,
+        &--fish1,
+        &--fish2 {
+            animation: swim 3s ease-in-out infinite;
         }
     }
 }
+// Animations for scene 1
+@keyframes sun {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+@keyframes cloud {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+@keyframes swim {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(15px); }
+}
+@keyframes wave {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
 
-// SCENE 2 - The ocean's beauty
 
-// SCENE 3 - The threats
+// SCENE 2 - THE OCEAN'S BEAUTY
 
-// SCENE 4 - Call to action
+// SVG positions for scene 2
+
+// Animations for scene 2
+
+
+// SCENE 3 - THE THREATS
+
+// SVG positions for scene 3
+
+// Animations for scene 3
+
+
+// SCENE 4 - CALL TO ACTION
+
+// SVG positions for scene 4
+
+// Animations for scene 4
+
 
 
 

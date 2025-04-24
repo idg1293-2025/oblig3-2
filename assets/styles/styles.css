@@ -7,6 +7,7 @@ body {
   color: #393939;
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 h1,
@@ -36,21 +37,28 @@ a:hover {
   width: 12%;
   top: 2%;
   left: 2%;
+  animation: sun 5s infinite ease-in-out;
 }
 .scene1__svg--cloud {
   width: 10%;
   top: 5%;
   right: 15%;
-}
-.scene1__svg--flower {
-  width: 5%;
-  top: 42%;
-  right: 15%;
+  animation: cloud 3s linear infinite;
 }
 .scene1__svg--bird {
   width: 5%;
   top: 10%;
   left: 50%;
+}
+.scene1__svg--beach {
+  width: 7%;
+  top: 43%;
+  right: 8%;
+}
+.scene1__svg--umbrella {
+  width: 7%;
+  top: 42%;
+  right: 25%;
 }
 .scene1__svg--turtle {
   width: 5%;
@@ -64,10 +72,60 @@ a:hover {
 }
 .scene1__svg--fish2 {
   width: 5%;
-  top: 80%;
-  left: 50%;
+  top: 70%;
+  left: 10%;
+}
+.scene1__svg--wave {
+  width: 25%;
+  bottom: 0;
+  left: 40%;
+  opacity: 0.3;
+  animation: wave 5s ease-in-out infinite;
+}
+.scene1__svg--crab {
+  width: 3%;
+  top: 52%;
+  left: 40%;
+}
+.scene1__svg--turtle, .scene1__svg--fish1, .scene1__svg--fish2 {
+  animation: swim 3s ease-in-out infinite;
 }
 
+@keyframes sun {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+@keyframes cloud {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes swim {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+}
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
 .scene1 {
   position: relative;
   background: linear-gradient(to left, #96d5ff, #d7efff);
@@ -78,20 +136,29 @@ a:hover {
   position: absolute;
   left: 2%;
   top: 30%;
+  animation: title 1s ease-out forwards;
+  opacity: 0;
 }
 .scene1__text {
   max-width: 30%;
-  font-size: 0.75rem;
+  font-size: 1rem;
   position: absolute;
   font-weight: bold;
 }
 .scene1__text--first {
-  left: 1%;
-  top: 50%;
+  left: 2%;
+  top: 45%;
+  animation: text 1.5s ease-out forwards;
+  opacity: 0;
+  animation-delay: 3s;
 }
 .scene1__text--second {
-  left: 1%;
-  top: 70%;
+  left: 35%;
+  top: 68%;
+  color: #f0f0f0;
+  animation: text 1.5s ease-out forwards;
+  opacity: 0;
+  animation-delay: 7s;
 }
 .scene1__surface {
   position: absolute;
@@ -109,10 +176,30 @@ a:hover {
   background: linear-gradient(to bottom, #96d5ff, #263b80);
   z-index: 0;
 }
-.scene1__svg--sun, .scene1__svg--cloud, .scene1__svg--flower, .scene1__svg--bird, .scene1__svg--turtle, .scene1__svg--fish1, .scene1__svg--fish2, .scene1__title, .scene1__text {
+.scene1__svg--sun, .scene1__svg--cloud, .scene1__svg--beach, .scene1__svg--umbrella, .scene1__svg--bird, .scene1__svg--fish1, .scene1__svg--fish2, .scene1__svg--turtle, .scene1__svg--wave, .scene1__svg--crab, .scene1__title, .scene1__text {
   z-index: 1;
 }
 
+@keyframes title {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes text {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .scene4__button {
   text-decoration: none;
 }

@@ -15,18 +15,39 @@
         <!-- svgs -->
         <img class="scene1__svg scene1__svg--sun" src="assets/images/scene1/sun.svg" alt="Sun">
         <img class="scene1__svg scene1__svg--cloud" src="assets/images/scene1/cloud.svg" alt="Cloud">
-        <img class="scene1__svg scene1__svg--flower" src="assets/images/scene1/flower.svg" alt="Flower">
-        <img class="scene1__svg scene1__svg--bird" src="assets/images/scene1/bird.svg" alt="Bird flying">
+        <!--<img class="scene1__svg scene1__svg--bird" src="assets/images/scene1/bird.svg" alt="Bird flying">-->
         <img class="scene1__svg scene1__svg--fish1" src="assets/images/scene1/fish1.svg" alt="Fish 1">
         <img class="scene1__svg scene1__svg--fish2" src="assets/images/scene1/fish2.svg" alt="Fish 2">
         <img class="scene1__svg scene1__svg--turtle" src="assets/images/scene1/turtle.svg" alt="Turtle">
+        <img class="scene1__svg scene1__svg--wave" src="assets/images/scene1/wave.svg" alt="Sea Wave">
+        <img class="scene1__svg scene1__svg--crab" src="assets/images/scene1/crab.svg" alt="Crab">
+        <img class="scene1__svg scene1__svg--umbrella" src="assets/images/scene1/umbrella.svg" alt="Beach umbrella">
+        <img class="scene1__svg scene1__svg--beach" src="assets/images/scene1/beach.svg" alt="Beach sign">
+        <svg class="scene1__surface"></svg>
+        <svg class="scene1__ocean"></svg>
+
+        <svg class="scene1__svg--bird" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 7%; right: 0; width: 100vw;">
+            <!-- path fly forward-->
+            <path id="fly-path" d="M0,100 C100,50 300,150 400,100" fill="none" stroke="transparent"/>
+            <!-- path fly back -->
+            <path id="fly-back" d="M400,100 C300,150 100,50 0,100" fill="none" stroke="transparent"/>
+            
+            <image href="assets/images/scene1/bird.svg" width="30" height="30">
+              <!-- fly forward -->
+              <animateMotion id="forward" dur="6s" repeatCount="1" begin="0s;back.end" >
+                <mpath href="#fly-path" />
+              </animateMotion>
+              <!-- fly back -->
+              <animateMotion id="back" dur="6s" repeatCount="1" begin="forward.end">
+                <mpath href="#fly-back" />
+              </animateMotion>
+            </image>
+        </svg>
 
         <h1 class="scene1__title mb">Goal 14: Life Below Water</h1>
         <p class="scene1__text scene1__text--first">Did you know that oceans cover more than 70% of our planet?</p>
         <p class="scene1__text scene1__text--second">They're like the Earth's life support system, providing food and homes for billions of people and animals.</p>
-
-        <div class="scene1__surface"></div>
-        <div class="scene1__ocean"></div>
+        
     </section>
 
     <!-- Scene 2: Water - The ocean's beauty -->

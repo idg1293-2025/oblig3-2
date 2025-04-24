@@ -10,21 +10,30 @@
         position: absolute;
         left: 2%;
         top: 30%;
+        animation: title 1s ease-out forwards;
+        opacity: 0;
     }
 
     &__text {
         max-width: 30%;
-        font-size: $font-s;
+        font-size: $font-m;
         position: absolute;
         font-weight: bold;
 
         &--first {
-            left: 1%;
-            top: 50%;
+            left: 2%;
+            top: 45%;
+            animation: text 1.5s ease-out forwards;
+            opacity: 0;
+            animation-delay: 3s;
         }
         &--second {
-            left: 1%;
-            top: 70%;
+            left: 35%;
+            top: 68%;
+            color: $text-color-light;
+            animation: text 1.5s ease-out forwards;
+            opacity: 0;
+            animation-delay: 7s;
         }
     }
 
@@ -49,13 +58,26 @@
 
     &__svg--sun,
     &__svg--cloud,
-    &__svg--flower,
+    &__svg--beach,
+    &__svg--umbrella,
     &__svg--bird,
-    &__svg--turtle,
     &__svg--fish1,
     &__svg--fish2,
+    &__svg--turtle,
+    &__svg--wave,
+    &__svg--crab,
+
     &__title,
     &__text {
         z-index: 1; // all elements on top of ocean and surface
     }
+}
+
+@keyframes title {
+    0% { opacity: 0; transform: translateX(-20px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+@keyframes text {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
 }

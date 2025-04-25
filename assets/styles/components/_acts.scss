@@ -1,4 +1,5 @@
 @use '../base/global' as *;
+@use '../base/intersectionObserver' as *;
 
 .acts {
     height: 100vh;
@@ -45,19 +46,4 @@
             right: 5%;
         }
     }
-
-    /*
-    // Intersection observer 
-    &__text, 
-    &__svg,
-    &__link {
-        //only visible when in viewport
-        opacity: 0;
-        transition: opacity 1s ease; 
-    }
-    
-    &.visible .scene4__text, 
-    &.visible .scene4__svg {
-        opacity: 1;
-    }*/
 }

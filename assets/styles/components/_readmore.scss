@@ -1,4 +1,5 @@
 @use '../base/global' as *;
+@use '../base/intersectionObserver' as *;
 
 .readmore {
     height: 100vh;
@@ -37,24 +38,6 @@
         left: 50%; 
         transform: translateX(-50%);
     }
-
-    /*
-    // Intersection observer 
-    &__text, 
-    &__svg,
-    &__link,
-    &__button {
-        //only visible when in viewport
-        opacity: 0;
-        transition: opacity 1s ease; 
-    }
-    
-    &.visible .scene4__text, 
-    &.visible .scene4__svg,
-    &.visible .scene4__link,
-    &.visible .scene4__button {
-        opacity: 1;
-    }*/
 }
 
 button {

@@ -1,4 +1,5 @@
 @use '../base/global' as *;
+@use '../base/intersectionObserver' as *;
 
 .cta {
     height: 100vh;
@@ -30,17 +31,4 @@
         left: 50%; 
         transform: translateX(-50%);
     }
-/*
-    // Intersection observer 
-    &__text, 
-    &__svg {
-        //only visible when in viewport
-        opacity: 0;
-        transition: opacity 1s ease; 
-    }
-    
-    &.visible .scene4__text, 
-    &.visible .scene4__svg {
-        opacity: 1;
-    }*/
 }

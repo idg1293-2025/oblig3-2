@@ -1,4 +1,5 @@
 @use '../base/global' as *;
+@use '../base/intersectionObserver' as *;
 
 .plastic {
     height: 100vh;
@@ -44,19 +45,4 @@
             right: 10%;
         }
     }
-
-    /*
-    // Intersection observer 
-    &__text, 
-    &__svg {
-        //only visible when in viewport
-        opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 1s ease, transform 1s ease;
-    }
-    &.visible .scene3__text, 
-    &.visible .scene3__svg {
-        opacity: 1;
-        transform: translateY(0);
-    }*/
 }

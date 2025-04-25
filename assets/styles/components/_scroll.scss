@@ -1,4 +1,5 @@
 @use '../base/global' as *;
+@use '../base/intersectionObserver' as *;
 
 .scroll {
     position: relative;
@@ -23,7 +24,7 @@
     }
 
     &__svg {
-        position: absolute; // all svg elements are absolute
+        position: absolute; 
      
         &--arrow {
             width: 10vh;
@@ -33,19 +34,4 @@
             cursor: pointer;
         }
     }
-
-    /*
-    // Intersection observer 
-    &__text, 
-    &__svg {
-        //only visible when in viewport
-        opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 1s ease, transform 1s ease;
-    }
-    &.visible .scene2__text, 
-    &.visible .scene2__svg {
-        opacity: 1;
-        transform: translateY(0);
-    }*/
 }

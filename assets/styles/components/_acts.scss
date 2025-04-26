@@ -17,12 +17,12 @@
         transform: translateX(-50%);
 
         &--first {
-            top: 40vh;
+            top: 20vh;
             font-size: $font-l;
 
         }
         &--second {
-            bottom: 15vh;
+            top: 50vh;
         }
     }
 
@@ -31,7 +31,7 @@
     
         &--eco {
             width: 15vh;
-            top: 5%;
+            bottom: 10%;
             left: 50%; 
             transform: translateX(-50%);
         }

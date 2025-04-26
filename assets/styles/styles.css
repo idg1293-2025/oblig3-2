@@ -25,6 +25,12 @@ a:hover {
   color: #263b80;
 }
 
+footer {
+  background-color: #96d5ff;
+  padding: 1rem;
+  text-align: center;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;
@@ -251,13 +257,6 @@ a:hover {
   top: 70%;
   left: 10%;
 }
-.beach__svg--wave {
-  width: 40vh;
-  bottom: 0;
-  left: 40%;
-  opacity: 0.3;
-  animation: wave 5s ease-in-out infinite;
-}
 .beach__svg--crab {
   width: 5vh;
   top: 52%;
@@ -266,7 +265,7 @@ a:hover {
 .beach__svg--turtle, .beach__svg--fish1, .beach__svg--fish2 {
   animation: swim 3s ease-in-out infinite;
 }
-.beach__svg--beach, .beach__svg--umbrella, .beach__svg--fish1, .beach__svg--fish2, .beach__svg--turtle, .beach__svg--wave, .beach__svg--crab, .beach__text {
+.beach__svg--beach, .beach__svg--umbrella, .beach__svg--fish1, .beach__svg--fish2, .beach__svg--turtle, .beach__svg--crab, .beach__text {
   z-index: 1;
 }
 
@@ -284,14 +283,6 @@ a:hover {
   }
   50% {
     transform: translateX(15px);
-  }
-}
-@keyframes wave {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
   }
 }
 .corals {
@@ -543,18 +534,18 @@ a:hover {
   transform: translateX(-50%);
 }
 .acts__text--first {
-  top: 40vh;
+  top: 20vh;
   font-size: 1.5rem;
 }
 .acts__text--second {
-  bottom: 15vh;
+  top: 50vh;
 }
 .acts__svg {
   position: absolute;
 }
 .acts__svg--eco {
   width: 15vh;
-  top: 5%;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -574,6 +565,7 @@ a:hover {
   position: relative;
   background-color: #96d5ff;
   color: #393939;
+  overflow: hidden;
 }
 .readmore__text {
   max-width: 70%;
@@ -603,6 +595,15 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
 }
+.readmore__message {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #393939;
+  font-size: 1rem;
+  display: none;
+}
 
 button {
   display: block;
@@ -616,60 +617,4 @@ button {
 }
 button:hover {
   background-color: #0b46b4;
-}
-
-.m-0 {
-  margin: 0;
-}
-
-.m {
-  margin: 1rem;
-}
-
-.m-l {
-  margin: 2rem;
-}
-
-.mt {
-  margin-top: 1rem;
-}
-
-.mb {
-  margin-bottom: 1rem;
-}
-
-.ml {
-  margin-left: 1rem;
-}
-
-.mr {
-  margin-right: 1rem;
-}
-
-.p-0 {
-  padding: 0;
-}
-
-.p {
-  padding: 1rem;
-}
-
-.p-l {
-  padding: 2rem;
-}
-
-.pt {
-  padding-top: 1rem;
-}
-
-.pb {
-  padding-bottom: 1rem;
-}
-
-.pl {
-  padding-left: 1rem;
-}
-
-.pr {
-  padding-right: 1rem;
 }/*# sourceMappingURL=styles.css.map */

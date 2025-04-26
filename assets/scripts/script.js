@@ -1,4 +1,6 @@
-// Sources: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+// INTERSECTION OBSERVER
+// Sources: 
+// https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 // https://github.com/aliakseix/IDG1293_15-observers/blob/master/infinite.scroll.js
 
 const sceneElements = document.querySelectorAll(
@@ -21,10 +23,23 @@ const observer = new IntersectionObserver((entries, observer) => {
   
 sceneElements.forEach(el => observer.observe(el));
 
-// GSAP animations
+// GSAP ANIMATIONS
+// Sources: 
+// https://gsap.com/resources/get-started
+// https://codepen.io/GreenSock/collections/
+
 
 // activate scrolltrigger - enables scrollbased animation
 gsap.registerPlugin(ScrollTrigger);
+
+// beach.scss - crab walking back and forth
+gsap.to(".beach__svg--crab", {
+    x: 100,  // move 100px to the right
+    duration: 3,  // 3 sec
+    repeat: -1,   // infinite 
+    yoyo: true,   // go back smoothly
+    ease: "power1.inOut" 
+});
 
 // corals.scss - seaweed rotating back and forth
 gsap.to(".corals__svg--seaweed1, .corals__svg--seaweed2, .corals__svg--seabottom", {
@@ -71,4 +86,52 @@ gsap.to(".scroll__svg--arrow", {
     yoyo: true,
     repeat: -1,
     ease: "sine.inOut"
+});
+
+//cta.scss - drop falling down
+gsap.fromTo(".cta__svg",
+    { y: -300, opacity: 0 }, // starting state, off the screen
+    {
+      scrollTrigger: {
+        trigger: ".cta",
+        start: "top center",
+        toggleActions: "play none none none"
+      },
+      y: 0, // where it moves to
+      opacity: 1,
+      duration: 1.8,
+      ease: "power2.out" //speeds up
+    }
+);
+
+//readmore.scss seaweed growing
+gsap.fromTo(".readmore__svg",
+    { scaleY: 0, transformOrigin: "bottom center", opacity: 0 },
+    {
+      scrollTrigger: {
+        trigger: ".readmore",
+        start: "top center",
+        toggleActions: "play none none none"
+      },
+      scaleY: 1,
+      opacity: 1,
+      duration: 1.8,
+      ease: "power2.out"
+    }
+);
+
+// Donate button, inspiration: https://codemyui.com/tag/button/
+const donate = document.querySelector(".readmore__button");
+const message = document.querySelector(".readmore__message");
+
+// when button is clicked
+donate.addEventListener("click", () => {
+  // shoow message
+  message.style.display = "block";
+
+  // gsap animation
+  gsap.fromTo(".readmore__message",
+    { opacity: 0, scale: 0.5 },
+    { opacity: 1, scale: 1, duration: 1, ease: "power2.out" }
+  );
 });

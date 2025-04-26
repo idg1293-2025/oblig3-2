@@ -21,18 +21,18 @@
         
         &--fishbone1 {
             width: 20vh;
-            top: 50%;
+            top: 40%;
             left: 5%;
         }
         &--fishbone2 {
             width: 15vh;
-            top:60%;
+            top: 50%;
             left: 18%;
         }
         &--garbage {
             width: 20vh;
-            top: 50%;
-            right: 15%;
+            top: 35%;
+            right: 10%;
         }
         &--plastic {
             width: 15vh;
@@ -43,6 +43,25 @@
             width: 10vh;
             top: 5%;
             right: 10%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__text {
+            max-width: 90%;
+            left: 2%;
+        }
+        &__svg {
+            &--garbage,
+            &--plastic  {
+                width: 10vh;  
+            }
+            &--fishbone1 {
+                width: 15vh;
+            }
+            &--fishbone2 {
+                width: 10vh;
+            }
         }
     }
 }

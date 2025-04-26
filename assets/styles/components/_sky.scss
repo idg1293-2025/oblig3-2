@@ -38,6 +38,17 @@
       left: 50%;
     }
   }
+  @media screen and (max-width: 768px) {
+    &__text {
+      max-width: 60%;
+    }
+    &__svg {
+        &--cloud {
+            width: 15vh;
+            top: 10%;
+        }
+    }
+}
 }
 
 // keyframe animations for sun and cloud
@@ -50,3 +61,4 @@
   50% { transform: translateX(30px); }
   100% { transform: translateX(0); }
 }
+

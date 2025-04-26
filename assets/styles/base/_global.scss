@@ -25,13 +25,13 @@ $spacing-xl: 3rem;
 html {
     font-size: 16px;
     scroll-behavior: smooth; //smooth scrolling
+    overflow-x: hidden;
 }
 
 body {
     color: $text-color-dark;
     font-family: $font-text;
     font-weight: 400;
-    overflow-x: hidden;
 }
 
 h1,
@@ -48,6 +48,11 @@ a {
     &:hover {
         color: $primary-color;
     }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 footer {

@@ -8,12 +8,13 @@
     color: $text-color-light;
 
     &__text {
-        max-width: 60vw;
-        font-size: $font-l;
+        max-width: 90%;
+        font-size: clamp($font-m, 4vw, $font-l);
         position: absolute;
         font-weight: bold;
-        top: 60%;
-        left: 50%;
+        top: 10%;
+        left: 5%;
+        z-index: 10;
     }
 
     &__svg {
@@ -21,23 +22,36 @@
      
         &--dolphin {
             width: 50vh;
-            top: 10%;
-            right: 30%;
+            top:40%;
+            right: 20%;
         }
         &--jellyfish {
             width: 15vh;
-            top: 15%;
+            top: 20%;
             right: 10%;
         }
         &--fishes {
             width: 25vh;
-            top: 20%;
-            left: 10%;
+            top: 22%;
+            left: 15%;
         }
         &--green-fish {
             width: 20vh;
-            bottom: 15%;
+            bottom: 10%;
             left: 10%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__svg {
+            &--jellyfish,
+            &--fishes,
+            &--green-fish {
+                width: 12vh;  
+            }
+            &--dolphin {
+                width: 30vh;
+            }
         }
     }
 }

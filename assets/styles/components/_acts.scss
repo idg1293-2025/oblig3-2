@@ -10,7 +10,6 @@
     &__text {
         max-width: 70%;
         color: $text-color-dark;
-        font-weight: bold;
         text-align: center;
         position: absolute;
         left: 50%; 
@@ -18,8 +17,8 @@
 
         &--first {
             top: 20vh;
-            font-size: $font-l;
-
+            font-size: clamp($font-m, 5vw, $font-l);
+            font-weight: bold;
         }
         &--second {
             top: 50vh;
@@ -35,6 +34,7 @@
             left: 50%; 
             transform: translateX(-50%);
         }
+        /*
         &--nemo {
             width: 15vh;
             top: 40%;
@@ -44,6 +44,14 @@
             width: 15vh;
             top: 40%;
             right: 5%;
+        }*/
+    }
+
+    @media screen and (max-width: 768px) {
+        &__svg {
+            &--eco {
+                width: 10vh;
+            }
         }
     }
 }

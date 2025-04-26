@@ -12,7 +12,7 @@
         font-size: $font-l;
         position: absolute;
         font-weight: bold;
-        top: 40%;
+        top: 45%;
         left: 10%;
     }
 
@@ -26,7 +26,7 @@
         }
         &--bottle {
             width: 15vh;
-            top: 60%;
+            top: 65%;
             left: 10%;
         }
         &--dirt {
@@ -37,8 +37,29 @@
         
         &--oil {
             width: 40vh;
-            bottom: 8%;
-            left: 25%;
+            top: 5%;
+            left: 15%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__text {
+            max-width: 80%;
+        }
+        &__svg {
+            &--anchor {
+                width: 15vh;  
+            }
+            &--oil {
+                width: 20vh;
+            }
+            &--dirt {
+                width: 5vh;
+                top: 25%;
+            }
+            &--bottle {
+                width: 10vh;
+            }
         }
     }
 }

@@ -668,6 +668,24 @@ footer {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.readmore__link {
+  display: inline-block;
+  background-color: rgb(7, 43, 67);
+  color: #f0f0f0;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: clamp(0.75rem, 2vw, 1rem);
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.readmore__link:hover {
+  background-color: #0b46b4;
+  color: #f0f0f0;
+}
 .readmore__button {
   position: absolute;
   bottom: 30%;

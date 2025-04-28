@@ -25,12 +25,14 @@
             width: 20vh;
             top: 40%;
             left: 5%;
+            animation: fishbone 3s ease-in-out infinite;
         }
 
         &--fishbone2 {
             width: 15vh;
             top: 50%;
             left: 18%;
+            animation: fishbone 3s ease-in-out infinite;
         }
 
         &--garbage {
@@ -119,5 +121,16 @@
     50% {
         transform: scale(1.1);
         opacity: 0.8;
+    }
+}
+@keyframes fishbone {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px); 
+    }
+    100% {
+        transform: translateX(0); 
     }
 }

@@ -16,16 +16,12 @@ In the beginning of the project, we held a brainstorming session to generate ide
 We discussed different narratives on how to style and structure the page. One idea that stood out was to use scrolling as a metaphor for diving. We did a small sketch of the page layout so that we could work in that direction. We also discussed what kinds of animations and interactivity we could use. We talked about fish swimming by, trash floating, light changing as you go further down and so on.  
 We also used ChatGPT during our brainstorming session to help us refine our ideas. It helped us explore creative ideas, develop the structure of our story, and helped us with a work plan to get started and how to delegate the work in the group. 
 
-
-
 ## Storyboard
 <img src="assets/images/storyboard.png" alt="Storyboard" width="300"/>
 
 The story is split into several parts. First, we start above the water, where everything looks calm and beautiful. Then, as the user scrolls down, they dive deeper into the ocean. The water gets darker and we see more and more trash and damage to marine life. In the last part, the story shifts to what we can do to fix things and protect the ocean. The goal is to make people more aware of the problem and encourage them to take action.
 
 ## Technology Stack
-- Technology stack employed and list of animations, interactions and observers implemented.
-
 ### Tech Stack:
 
 - HTML5: Used for structuring the content of the website.

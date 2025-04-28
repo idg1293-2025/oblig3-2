@@ -12,33 +12,76 @@
         font-size: $font-l;
         position: absolute;
         font-weight: bold;
-        top: 40%;
+        top: 45%;
         left: 10%;
     }
 
     &__svg {
         position: absolute; // all svg elements are absolute
-        
+
         &--anchor {
             width: 30vh;
             bottom: 15%;
             right: 10%;
+            animation: floatDown 12s ease-in-out infinite;
         }
+
         &--bottle {
             width: 15vh;
-            top: 60%;
+            top: 65%;
             left: 10%;
+            animation: floatDown 10s ease-in-out infinite;
         }
+
         &--dirt {
             width: 10vh;
             top: 15%;
             right: 10%;
+            animation: floatDown 15s ease-in-out infinite;
         }
-        
+
         &--oil {
             width: 40vh;
-            bottom: 8%;
-            left: 25%;
+            top: 5%;
+            left: 15%;
+            animation: floatDown 15s ease-in-out infinite;
         }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__text {
+            max-width: 80%;
+        }
+
+        &__svg {
+            &--anchor {
+                width: 15vh;
+            }
+
+            &--oil {
+                width: 20vh;
+            }
+
+            &--dirt {
+                width: 5vh;
+                top: 25%;
+            }
+
+            &--bottle {
+                width: 10vh;
+            }
+        }
+    }
+}
+
+@keyframes floatDown {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(120vh) rotate(360deg);
+        opacity: 0.3;
     }
 }

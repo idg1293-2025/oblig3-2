@@ -5,11 +5,11 @@
     position: relative;
     background: linear-gradient(to left, $secondary-color, $tertiary-color);
     height: 100vh;
-    z-index: 1;
+    overflow: hidden;
 
     &__text {
-        max-width: 60%;
-        font-size: $font-l;
+        max-width: 90%;
+        font-size: clamp($font-m, 4vw, $font-l);
         position: absolute;
         font-weight: bold;
 
@@ -20,7 +20,6 @@
             opacity: 0;
         }
         &--second {
-            position: absolute;
             bottom: 25%;
             left: 40%;
             color: $text-color-light;
@@ -67,20 +66,13 @@
         }
         &--fish1 {
             width: 8vh;
-            top: 70%;
+            top: 80%;
             right: 15%;
         }
         &--fish2 {
             width: 8vh;
             top: 70%;
             left: 10%;
-        }
-        &--wave {
-            width: 40vh;
-            bottom: 0;
-            left: 40%;
-            opacity: 0.3;
-            animation: wave 5s ease-in-out infinite;
         }
         &--crab {
             width: 5vh;
@@ -99,7 +91,6 @@
     &__svg--fish1,
     &__svg--fish2,
     &__svg--turtle,
-    &__svg--wave,
     &__svg--crab,
     &__text {
         z-index: 1; // all elements on top of ocean and surface
@@ -116,8 +107,4 @@
 @keyframes swim {
     0%, 100% { transform: translateX(0); }
     50% { transform: translateX(15px); }
-}
-@keyframes wave {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(10px); }
 }

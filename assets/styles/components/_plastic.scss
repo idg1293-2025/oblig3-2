@@ -6,6 +6,7 @@
     position: relative;
     background-color: black;
     color: $text-color-light;
+    overflow-x: hidden;
 
     &__text {
         max-width: 50%;
@@ -18,7 +19,7 @@
     }
 
     &__svg {
-        position: absolute; // all svg elements are absolute
+        position: absolute;
 
         &--fishbone1 {
             width: 20vh;
@@ -58,27 +59,53 @@
     }
 
     @media screen and (max-width: 768px) {
-        &__text {
-            max-width: 90%;
-            left: 2%;
+        .plastic__text {
+          max-width: 90%;
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: 1.2rem;
+          top: 15%;
+          text-align: center;
         }
-
-        &__svg {
-
-            &--garbage,
-            &--plastic {
-                width: 10vh;
-            }
-
-            &--fishbone1 {
-                width: 15vh;
-            }
-
-            &--fishbone2 {
-                width: 10vh;
-            }
+      
+        .plastic__svg--fishbone1 {
+          width: 8vh;
+          bottom: 50%;
+          left: 25%;
+          transform: translateX(-50%);
+          top: auto;
         }
-    }
+      
+        .plastic__svg--fishbone2 {
+          width: 6vh;
+          bottom: 40%;
+          left: 35%;
+          transform: translateX(-50%);
+          top: auto;
+        }
+      
+        .plastic__svg--plastic {
+          width: 8vh;
+          bottom: 20%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      
+        .plastic__svg--garbage {
+          width: 8vh;
+          bottom: 50%;
+          left: 65%;
+          transform: translateX(-50%);
+          top: auto;
+        }
+      
+        .plastic__svg--bandage {
+          width: 6vh;
+          top: 5%;
+          right: 10%;
+        }
+      }
+      
 }
 
 @keyframes pulse {

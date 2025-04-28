@@ -8,6 +8,7 @@ body {
   color: #393939;
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 h1,
@@ -341,6 +342,7 @@ footer {
 @media screen and (max-width: 768px) {
   .corals__svg--seaweed1, .corals__svg--seabottom {
     width: 40vw;
+    bottom: 5%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -442,6 +444,13 @@ footer {
   left: 10%;
 }
 
+@media screen and (max-width: 768px) {
+  .changing__text {
+    max-width: 90%;
+    font-size: 2rem;
+    left: 5%;
+  }
+}
 .pollution {
   height: 100vh;
   position: relative;
@@ -517,6 +526,7 @@ footer {
   position: relative;
   background-color: black;
   color: #f0f0f0;
+  overflow-x: hidden;
 }
 .plastic__text {
   max-width: 50%;
@@ -559,18 +569,45 @@ footer {
   animation: pulse 2s infinite ease-in-out;
 }
 @media screen and (max-width: 768px) {
-  .plastic__text {
+  .plastic .plastic__text {
     max-width: 90%;
-    left: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    top: 15%;
+    text-align: center;
   }
-  .plastic__svg--garbage, .plastic__svg--plastic {
-    width: 10vh;
+  .plastic .plastic__svg--fishbone1 {
+    width: 8vh;
+    bottom: 50%;
+    left: 25%;
+    transform: translateX(-50%);
+    top: auto;
   }
-  .plastic__svg--fishbone1 {
-    width: 15vh;
+  .plastic .plastic__svg--fishbone2 {
+    width: 6vh;
+    bottom: 40%;
+    left: 35%;
+    transform: translateX(-50%);
+    top: auto;
   }
-  .plastic__svg--fishbone2 {
-    width: 10vh;
+  .plastic .plastic__svg--plastic {
+    width: 8vh;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .plastic .plastic__svg--garbage {
+    width: 8vh;
+    bottom: 50%;
+    left: 65%;
+    transform: translateX(-50%);
+    top: auto;
+  }
+  .plastic .plastic__svg--bandage {
+    width: 6vh;
+    top: 5%;
+    right: 10%;
   }
 }
 
@@ -619,6 +656,30 @@ footer {
   transform: translateX(-50%);
 }
 
+@media screen and (max-width: 768px) {
+  .cta__text--first {
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 90%;
+  }
+  .cta__text--second {
+    top: 50%; /* <- Flytt denne MYYYE lengre ned */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    text-align: center;
+    max-width: 90%;
+  }
+  .cta__svg {
+    width: 10vh;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 .acts {
   height: 100vh;
   position: relative;

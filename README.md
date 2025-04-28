@@ -8,6 +8,8 @@ This project includes an interactive website that uses scroll telling and storyt
 
 This project is a scrollytelling that focuses on Sustainable Development Goal 14: Life Below Water. The idea is to tell a visual story that shows how life in the ocean is being affected by pollution and climate change.
 
+## GitHub Pages
+Link to GitHub pages: https://idg1293-2025.github.io/oblig3-2/
 
 ## Brainstorming 
 In the beginning of the project, we held a brainstorming session to generate ideas. We began to review UN SDG goals. After looking at each goal, we ended up choosing between SDG 14 and SDG 3. We quickly agreed on SDG 14: Life Below Water, because we felt that it had more visual potential and an environmental message. 
@@ -24,8 +26,25 @@ The story is split into several parts. First, we start above the water, where ev
 ## Technology Stack
 - Technology stack employed and list of animations, interactions and observers implemented.
 
-## How to Get Started
-Link to Github pages: 
+### Tech Stack:
+
+- HTML5: Used for structuring the content of the website.
+
+- SCSS/SASS: Used for styling the website with a modular and maintainable approach.
+
+- JavaScript: Used for adding interactivity and Intersection Observer
+
+- BEM (Block Element Modifier): Employed for structuring and naming CSS classes, maintaining clarity and consistency in the project.
+
+### Animations, interactions and observers
+- CSS Keyframe Animations: Applied for animating elements like fish, plastic, and other SVGs to bring the website to life.
+
+- GSAP: Implemented to create smooth, scroll-triggered animations for certain elements such as floating fish, objects, and text.
+
+- ScrollTrigger: In JS, used to trigger animations based on the user's scroll position, ensuring some elements animate when user scrolls down the page.
+
+- Intersection Observer: Integrated to trigger animations only when specific sections are in viewport, optimizing performance by preventing animations from running when it is not in view.
+
 
 ## Content
 Text content retrieved from: https://sdgs.un.org/goals/goal14#progress_and_info 

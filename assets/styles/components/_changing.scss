@@ -16,3 +16,11 @@
         left: 10%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .changing__text {
+      max-width: 90%;
+      font-size: 2rem;
+      left: 5%;
+    }
+  }

@@ -463,21 +463,25 @@ footer {
   width: 30vh;
   bottom: 15%;
   right: 10%;
+  animation: floatDown 12s ease-in-out infinite;
 }
 .pollution__svg--bottle {
   width: 15vh;
   top: 65%;
   left: 10%;
+  animation: floatDown 10s ease-in-out infinite;
 }
 .pollution__svg--dirt {
   width: 10vh;
   top: 15%;
   right: 10%;
+  animation: floatDown 15s ease-in-out infinite;
 }
 .pollution__svg--oil {
   width: 40vh;
   top: 5%;
   left: 15%;
+  animation: floatDown 15s ease-in-out infinite;
 }
 @media screen and (max-width: 768px) {
   .pollution__text {
@@ -498,6 +502,16 @@ footer {
   }
 }
 
+@keyframes floatDown {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(120vh) rotate(360deg);
+    opacity: 0.3;
+  }
+}
 .plastic {
   height: 100vh;
   position: relative;
@@ -511,6 +525,7 @@ footer {
   font-weight: bold;
   top: 20%;
   left: 30%;
+  transform: translateX(-50%);
 }
 .plastic__svg {
   position: absolute;
@@ -540,6 +555,9 @@ footer {
   top: 5%;
   right: 10%;
 }
+.plastic__svg--garbage, .plastic__svg--plastic, .plastic__svg--bandage {
+  animation: pulse 2s infinite ease-in-out;
+}
 @media screen and (max-width: 768px) {
   .plastic__text {
     max-width: 90%;
@@ -556,6 +574,16 @@ footer {
   }
 }
 
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
 .blue-background {
   height: 100vh;
   position: relative;
@@ -665,12 +693,15 @@ footer {
 .readmore__link {
   position: absolute;
   bottom: 40%;
+}
+.readmore__link {
+  position: absolute;
+  bottom: 40%;
   left: 50%;
   transform: translateX(-50%);
 }
-
 .readmore__link {
-  display: inline-block;
+  display: block;
   background-color: rgb(7, 43, 67);
   color: #f0f0f0;
   border: 1px solid transparent;
@@ -678,10 +709,7 @@ footer {
   padding: 1rem;
   font-size: clamp(0.75rem, 2vw, 1rem);
   cursor: pointer;
-  text-align: center;
-  text-decoration: none;
 }
-
 .readmore__link:hover {
   background-color: #0b46b4;
   color: #f0f0f0;

@@ -41,22 +41,50 @@ The story is split into several parts. First, we start above the water, where ev
 
 - Intersection Observer: Integrated to trigger animations only when specific sections are in viewport, optimizing performance by preventing animations from running when it is not in view.
 
+## Assignment Goals and Implementation
+### Scroll Telling and Storytelling
+We implemented vertical scroll to guide users through the storytelling. Intersection Observer was used to trigger animations at the right moment, and we added text like "scroll to see what's under the surface" to help users 'engage' with the content.
+
+### SVGs and CSS Drawing
+SVGs were used for visual elements and implemented as <img>. This was because it made them easier to manage and kept the code cleaner. Since we didn’t need to manipulate or style individual parts of the SVGs, using <img> was a more efficient approach for this project. The SVG elements were optimized with small file sizes (2–5kb). 
+
+We also used background gradients to create a dynamic background that reflects the ocean. It transitions from lighter to darker blue, symbolizing both the ocean’s depth when diving and the environmental challenges it faces, with the darker colors representing the ocean's trouble. 
+
+### Sass and BEM Implementation
+We structured the CSS using the BEM (Block, Element, Modifier) methodology and used SASS for better organization and maintainability of styles.
+
+### Accessibility and Responsiveness
+We added user preferences like "prefers-reduced-motion" so that animations were turned off.
+For responsiveness, we used relative units like rem, %, vh, and vw to ensure the layout adapts to different screen sizes. We also added media queries so that it adapts for various device sizes making sure the layout is responsive.
+
+### Interactive Elements with JavaScript and CSS
+We used GSAP to add scroll-based animations and interactions such as dolphin swimming in to the viewport and drop falling down, and applied CSS transitions for simple animations such as pulsating sun and swaying fish. 
+
+### Collaboration and Version Control
+We used Git and GitHub for version control and collaboration, using branches, commits, pull requests, reviewing and merging. 
+
+### Performance Optimisation
+We optimized web performance by using small SVG elements and Intersection Observer for efficient scroll animations. This ensured smooth scroll telling and a good user experience.
+
+### Design Principles and User Experience (UX)
+We focused on a clear visual design, readable typography (two types: one for headline and one for text), and clear contrast between text and background (blue shades and either black or white text). 
 
 ## Content
 Text content retrieved from: https://sdgs.un.org/goals/goal14#progress_and_info 
+
 SVG elements retreived from: https://www.svgrepo.com/ 
 
-### Scene 1: Above the surface 
+### Part 1: Above the surface 
 Did you know that oceans cover more than 70% of our planet? 
 They're like the Earth's life support system, providing food and homes for billions of people and animals. 
 
-### Scene 2: The ocean’s beauty
+### Part 2: The ocean
 Beneath the waves is an underwater paradise — coral reefs, sparkling fish, and all kinds of creatures. 
 The ocean regulates our climate, provides food, and is home to amazing ecosystems.
 
 Click the arrow to dive in and see what’s really going on beneath the surface!
 
-### Scene 3: The threats and ocean’s decline
+### Part 3: The threats
 Things are changing and the oceans are in trouble. 
 
 The ocean isn't the beautiful place it once was. Pollution is everywhere: plastic waste, oil spills, abandoned fishing nets. 
@@ -64,7 +92,7 @@ The ocean isn't the beautiful place it once was. Pollution is everywhere: plasti
 Every year, millions of tons of plastic end up in the ocean, harming fish, coral reefs, and even the air we breathe.
 
 
-### Scene 4: Call to action
+### Part 4: Call to action
 It’s time to act. Together, we can make a real difference and protect the ocean for future generations.
 
 So, what can you do? 
@@ -74,4 +102,5 @@ We can all make a difference! Use less plastic, support eco-friendly brands, and
 The ocean needs us more than ever, and together, we can make a real impact. Let’s step up and show some love for the sea! 
 
 Button: Join to save the ocean
+
 Link: Read more about goal 14
